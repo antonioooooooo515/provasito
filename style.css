@@ -1031,6 +1031,22 @@ p.paragrafo2
         width: 80px;
     }
 
+    .contact-information
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .contact-information .form
+    {
+        margin: 0;
+        padding: 0;
+    }
+
     footer
     {
         position: relative;
