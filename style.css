@@ -86,7 +86,7 @@ header
 {
     width: 100%;
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0px;
     padding: 0%;
     height: 100px;
@@ -173,7 +173,7 @@ header li a:hover
 
 .html-information
 {
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 .javascript-information
@@ -844,7 +844,16 @@ p.paragrafo2
 /*==================Responsive==================*/
 @media (max-width: 768px)
 {
-
+    body
+    {
+        overflow-x: hidden;
+    }
+    .html-information-content, .css-information-content, .javascript-information-content
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .pulsantehome
     {
         animation-delay: 140000s;
@@ -866,7 +875,7 @@ p.paragrafo2
 
     .menu
     {
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 0;
         background: white;
@@ -1034,6 +1043,11 @@ p.paragrafo2
     {
         position: absolute;
         right: 20px;
+    }
+
+    footer p
+    {
+        width: 50%;
     }
 }
 
