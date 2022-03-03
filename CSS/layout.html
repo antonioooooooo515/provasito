@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS | CSS/Layout</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img class="logo" src="/Immagini/Logo.png" width="125px">
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html"><i class='bx bx-home homebutton'></i></a></li>
+            <li><a href="/HTML/htmlgenerale.html">HTML</a></li>
+            <li><a href="cssgenerale.html">CSS</a></li>
+            <li><a href="">JavaScript</a></li>
+        </ul>
+    </div>
+    <a href="https://www.instagram.com/_antonioserrano_/?hl=en" target="_blank"><img class="insta" src="/Immagini/Instagram-icon.png" width="70px"></a>
+</header>
+
+    <div class="lateralbar-secondaria">
+      <ul>
+        <li><a href="cssgenerale.html">Generale</a></li>
+        <div class="subnav">
+          <li><a href="applicazionedeglistili.html">Stili e applicazioni &nbsp; <i class='bx bxs-down-arrow frecciagiù'></i></a></li>
+            <ul class="subnav-voci">
+              <li><a href="stiliinlinea.html">Stili in linea</a></li>
+              <li><a href="stilialivellodidocumenti.html">Stili a livello di documento</a></li>
+              <li><a href="stiliesterni.html">Stili esterni</a></li>
+            </ul>
+        </div>
+        <li><a href="stiliincascata.html">Stili in cascata</a></li>
+        <li><a href="regoleperpiùselettori.html">Regole per più selettori</a></li>
+        <div class="subnav">
+          <li><a href="classi.html">Classi &nbsp; <i class='bx bxs-down-arrow frecciagiù'></i></a></li>
+            <ul class="subnav-voci">
+              <li><a href="classiuniversali.html">Classi universali</a></li>
+              <li><a href="classiregolari.html">Classi regolari</a></li>
+              <li><a href="pseudoclassi.html">Pseudoclassi</a></li>
+            </ul>
+        </div>
+        <li><a href="layout.html">Layout</a></li>
+      </ul>
+    </div>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a class="first-lateralbar" href="cssgenerale.html">Generale</a></li>
+          <div class="subnav">
+            <li><a href="applicazionedeglistili.html">Stili e applicazioni &nbsp; <i class='bx bxs-down-arrow frecciagiù'></i></a></li>
+              <ul class="subnav-voci">
+                <li><a href="stiliinlinea.html">Stili in linea</a></li>
+                <li><a href="stilialivellodidocumenti.html">Stili a livello di documento</a></li>
+                <li><a href="stiliesterni.html">Stili esterni</a></li>
+              </ul>
+          </div>
+          <li><a href="stiliincascata.html">Stili in cascata</a></li>
+          <li><a href="regoleperpiùselettori.html">Regole per più selettori</a></li>
+          <div class="subnav">
+            <li><a href="classi.html">Classi &nbsp; <i class='bx bxs-down-arrow frecciagiù'></i></a></li>
+              <ul class="subnav-voci">
+                <li><a href="classiuniversali.html">Classi universali</a></li>
+                <li><a href="classiregolari.html">Classi regolari</a></li>
+                <li><a href="pseudoclassi.html">Pseudoclassi</a></li>
+              </ul>
+          </div>
+          <li><a href="layout.html">Layout</a></li>
+        </ul>
+      </nav>
+        
+        <article>
+          <h1 class="titolo">Layout</h1>
+          <br>
+
+        <h2>
+            Relativamente alla disposizione dei contenuti, possiamo distinguere i <span style="background-color: white; color: darkmagenta;">layout</span> in base al numero di colonne utilizzate.
+        </h2>
+        <br>
+
+        <p>
+            I layout più comuni sono:
+        </p>
+        <ul>
+            <li>layout a una colonna, detto anche monolitico;</li>
+            <li>layout a due colonne;</li>
+            <li>layout a tre colonne;</li>
+        </ul>
+        <br>
+
+        <p>
+            Dal punto di vista tecnico, le diverse strategie per definire il layout delle pagineWeb possono essere così schematizzate:
+        </p>
+        <ul>
+            <li><b style="background-color: white;">layout fisso</b>, in cui il layout mantiene le proprie dimensioni indipendentemente dalla dimensione della finestra del browser o del testo;</li>
+            <li><b style="background-color: white;">layout fluido o liquido</b>, dove le dimensioni del layout cambiano in modo proporzionale alle dimensioni della finestra;</li>
+            <li><b style="background-color: white;">layout elastico</b>, in cui le dimensioni del layout cambiano in modo proporzionale alla dimensione del testo;</li>
+            <li><b style="background-color: white;">layout ibrido</b>, che combina aree fisse e aree le cui dimensioni variano dinamicamente.</li>
+        </ul>
+        <br>
+        <br>
+
+        <p>
+            Per fare ciò definiamo una serie di elementi:
+        </p>
+        <ul>
+            <li><b style="background-color: white;">header</b>, che definisce un'intestazione;</li>
+            <li><b style="background-color: white;">nav</b>, che definisce una serie di collegamenti di navigazione;</li>
+            <li><b style="background-color: white;">section</b>, che definisce una sezione di un documento;</li>
+            <li><b style="background-color: white;">article</b>, che definisce un contenuto autonomo;</li>
+            <li><b style="background-color: white;">aside</b>, che definisce un contenuto oltre a quello autonomo;</li>
+            <li><b style="background-color: white;">footer</b>, che definisce un piè di pagina.</li>
+        </ul>
+        <br>
+        <br>
+
+        <p>
+            Facciamo un esempio:
+        </p>
+        <br>
+
+        <div class="box-esempi">
+          <div class="box-esempi-content">
+            <b style="background-color: white;">HTML</b>
+            <br>
+            <br>
+
+            &#60section>
+            <br>
+            &nbsp; &nbsp; &#60nav> Nav &#60/nav>
+            <br>
+            &nbsp; &nbsp; &#60article> Article &#60/article>
+            <br>
+            &nbsp; &nbsp; &#60aside> Aside &#60/aside>
+            <br>
+            &#60/section>
+            <br>
+            &#60footer> Footer &#60/footer>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="box-esempi">
+          <div class="box-esempi-content">
+            <b style="background-color: white;">CSS</b>
+            <br>
+            <br>
+
+            section{display: flex;}
+            <br>
+            nav {width: 20%; background-color: lightgray; color: black; height: 900px;}
+            <br>
+            article {width: 60%; background-color: grey; color: black; height: 900px;}
+            <br>
+            aside {width: 20%; background-color: darkgray; color: black; height: 900px;}
+            <br>
+            footer {bottom: 0; position: fixed; background-color: black; color: white; width: 100%; height: 100px;}
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <p>
+            Risultato:
+        </p>
+
+        <img src="/Immagini/Layout.JPG" width="700px">
+        <br><br><br><br><br><br><br><br>
+
+        </article>
+
+        <aside>
+          
+        </aside>
+  </section>
+
+
+  <!--Footer-->
+  <footer>
+    <p style="background-color: black; color: white;">
+    &copy Copyright 2022 Antonio Serranò
+    </p>
+  
+    <img src="/Immagini/Logo.png" width="100px">
+  </footer>
+    
+</body>
+</html>
