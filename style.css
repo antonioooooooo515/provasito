@@ -844,10 +844,6 @@ p.paragrafo2
 /*==================Responsive==================*/
 @media (max-width: 1080px)
 {
-    body
-    {
-        overflow-x: hidden;
-    }
     .html-information-content, .css-information-content, .javascript-information-content
     {
         width: 100%;
@@ -889,7 +885,7 @@ p.paragrafo2
         overflow: scroll;
         background: #242424;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: block;
         z-index: 10000;
     }
