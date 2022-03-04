@@ -173,7 +173,7 @@ header li a:hover
 
 .html-information
 {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .javascript-information
@@ -225,6 +225,9 @@ header li a:hover
     border-radius: 10px;
     z-index: 2;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .box-icon-icon
@@ -844,12 +847,42 @@ p.paragrafo2
 /*==================Responsive==================*/
 @media (max-width: 1080px)
 {
-    .html-information-content, .css-information-content, .javascript-information-content
+    .home-argoments
     {
         width: 100%;
-        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
     }
+
+    .box-home
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .box-icon
+    {
+        width: 80%;
+        height: 80%;
+    }
+
+    .box-icon-content
+    {
+        margin-top: 100px;
+    }
+
+    .html-information, .css-information, .javascript-information
+    {
+        width: 85%;
+    }
+
     .pulsantehome
     {
         animation-delay: 140000s;
