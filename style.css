@@ -36,6 +36,109 @@
     width: 85px;
 }
 
+/*=============================Typinng Home=============================*/
+.typing-box
+{
+    height: 500px;
+    margin-top: 400px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #24252A;
+}
+
+.typing
+{
+    display: inline-flex;
+}
+
+.typing .typing-static-text
+{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    background-color: #24252A;
+}
+
+.typing .typing-dynamic-text
+{
+    margin-left: 15px;
+    height: 70px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #24252A;
+}
+
+.typing .typing-dynamic-text li
+{
+    font-family: 'Poppins', sans-serif;
+    color: #fc6d6d;
+    font-size: 50px;
+    font-weight: 600;
+    list-style-type: none;
+    position: relative;
+    top: 0;
+    background-color: #24252A;
+    animation: up-slide 3s steps(2) infinite;
+}
+
+@keyframes up-slide
+{
+    to{top:-150px}
+}
+
+.typing .typing-dynamic-text li span
+{
+    position: relative;
+}
+
+.typing .typing-dynamic-text li span::before, .typing .typing-dynamic-text li span::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #24252A;
+}
+
+.typing .typing-dynamic-text .primo-type span::before
+{
+    background: #24252A /*#343f4f*/;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+.typing .typing-dynamic-text .primo-type span::after
+{
+    margin-left: 2px;
+    width: 2px;
+    background: #fc6d6d;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+.typing .typing-dynamic-text .secondo-type span::before
+{
+    background: #24252A /*#343f4f*/;
+    animation: typing 1.5s steps(15) infinite;
+}
+
+.typing .typing-dynamic-text .secondo-type span::after
+{
+    width: 2px;
+    background: #fc6d6d;
+    animation: typing 1.5s steps(15) infinite;
+}
+
+
+@keyframes typing
+{
+    to{left:115%}
+}
+
+/*==========================================================*/
+
 .home-principale
 {
     display: flex;
@@ -112,10 +215,11 @@ header li
 
 header li a 
 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: 'Poppins', sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 35px;
     font-weight: bold;
     transition: all 0.3s ease 0s;
     border-radius: 10px;
@@ -127,8 +231,8 @@ header li a:hover
 {
     background-color: #E34672;
     color: white;
-    padding: 25px 35px;
-    font-size: 24px;
+    padding: 20px 35px;
+    font-size: 37px;
 }
 
 .carattere
@@ -138,9 +242,10 @@ header li a:hover
 
 .homebutton
 {
+    font-family: 'Poppins', sans-serif;
     background-color: transparent;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     transition: all 0.3s ease 0s;
 }
 
@@ -171,37 +276,130 @@ header li a:hover
     font-size: 22px;
 }
 
+.home-argoments
+{
+    position: relative;
+}
+
 .html-information
 {
-    margin-top: 200px;
+    margin-top: 150px;
+    height: 500px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
+    margin-bottom: -51px;
+    background-color: #F3ecea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-information
+{
+    z-index: 0;
+    position: relative;
+    height: 500px;
+    clip-path: polygon(0 50px, 100% 0, 100% 450px, 0 100%);
+    margin-bottom: -51px;
+    background-color: #96d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .javascript-information
 {
+    position: relative;
     margin-bottom: 150px;
+    height: 500px;
+    clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 100%);
+    background-color: #ffc0c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.html-information-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3ecea;
+}
+
+.html-information-content h1, .css-information-content h1
+{
+    width: 40%;
+    background-color: #F3ecea;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 150px;
+    color: #242424;
+    /*-webkit-text-stroke: 0.5px #242424;*/
+    font-family: 'Poppins', sans-serif;
 }
 
 .html-information-content h2
 {
-    border-radius: 10px 10px 0 0;
+    width: 60%;
     background-color: #F3ecea;
     padding: 30px; 
     color: black;
 }
 
+.css-information-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #96d4d4;
+}
+
 .css-information-content h2
 {
+    width: 60%;
     background-color: #96d4d4;
     padding: 30px;
     color: black;
 }
 
+.javascript-information-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc0c7;
+}
+
+.javascript-information-content-h1
+{
+    width: 40%;
+    height: 50%;
+    background-color: #ffc0c7;
+}
+
+.javascript-information-content-h1 h1
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #F3ecea;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 140px;
+    color: #242424;
+    /*-webkit-text-stroke: 0.5px #242424;*/
+    font-family: 'Poppins', sans-serif;
+}
+
 .javascript-information-content h2
 {
+    width: 60%;
     background-color: #ffc0c7;
     padding: 30px;
     color: black;
-    border-radius: 0 0 10px 10px;
 }
 /*-----------------------------------Box-icon-home----------------------------*/
 .box-icon
@@ -286,6 +484,7 @@ header li a:hover
 {
     background-color: var(--box-icon-inner);
     color: var(--box-icon-color);
+    font-weight: 700;
 }
 
 .box-icon-content h3
@@ -333,7 +532,7 @@ button a
 
 section
 {
-    margin-top: 60px;
+    margin-top: 150px;
     display: flex;
 }
 
@@ -363,7 +562,7 @@ article
     position: relative;
 }
 
-article p
+article p, article div
 {
     font-size: 22px; 
     font-family: 'Nunito', sans-serif; 
@@ -534,7 +733,7 @@ nav li a:hover
 
 .line
 {
-    width: 50%;
+    width: 70%;
     height: 1px;
     background-color: white;
     opacity: 50%;
@@ -843,6 +1042,33 @@ p.paragrafo2
     border-left: 5px solid darkgray;
 }
 
+/*==================Altri elementi pagina==================*/
+
+/*Selectiom*/
+::selection
+{
+    background-color: #E34672;
+    color: white;
+}
+
+
+/*Scrollbar*/
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #E34672;
+    border-radius: 10px;
+}
+
 
 /*==================Responsive==================*/
 @media (max-width: 1080px)
@@ -859,6 +1085,7 @@ p.paragrafo2
 
     .box-home
     {
+        background-color: #242424;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -1217,4 +1444,3 @@ p.paragrafo2
 
     
 }
-
