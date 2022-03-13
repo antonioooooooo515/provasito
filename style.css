@@ -249,7 +249,7 @@ header li a:hover
     transition: all 0.3s ease 0s;
 }
 
-.homepage
+/*.homepage
 {
     width: 70%;
     font-size: 16px;
@@ -268,7 +268,7 @@ header li a:hover
 {
     background-color: #24252A;
     color: white;
-}
+}*/
 
 .link
 {
@@ -276,61 +276,84 @@ header li a:hover
     font-size: 22px;
 }
 
-.home-argoments
-{
-    position: relative;
-}
-
+/*HTML-INFORMATION*/
 .html-information
 {
     margin-top: 150px;
-    height: 500px;
+    height: auto;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
-    margin-bottom: -51px;
+    /*clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);*/
     background-color: #F3ecea;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
+.html-information h1, .html-information h2
+{
+    background-color: #F3ecea;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*CSS-INFORMATION*/
 .css-information
 {
-    z-index: 0;
+    height: auto;
     position: relative;
-    height: 500px;
-    clip-path: polygon(0 50px, 100% 0, 100% 450px, 0 100%);
-    margin-bottom: -51px;
+    /*clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);*/
     background-color: #96d4d4;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
+.css-information h1, .css-information h2
+{
+    background-color: #96d4d4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*JAVASCRIPT-INFORMATION*/
 .javascript-information
 {
     position: relative;
     margin-bottom: 150px;
-    height: 500px;
-    clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+    /*clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 100%);*/
     background-color: #ffc0c7;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
-.html-information-content
+.javascript-information h1, .javascript-information h2
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F3ecea;
+    background-color: #ffc0c7;
+    font-family: 'Poppins', sans-serif;
 }
 
-.html-information-content h1, .css-information-content h1
+.javascript-information-content
 {
-    width: 40%;
-    background-color: #F3ecea;
+    background-color: transparent;
+}
+
+.html-information h1, .css-information h1
+{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 150px;
+    color: #242424;
+    /*-webkit-text-stroke: 0.5px #242424;*/
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+}
+
+.javascript-information-content h1
+{
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
@@ -340,66 +363,16 @@ header li a:hover
     font-family: 'Poppins', sans-serif;
 }
 
-.html-information-content h2
-{
-    width: 60%;
-    background-color: #F3ecea;
-    padding: 30px; 
-    color: black;
-}
-
-.css-information-content
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #96d4d4;
-}
-
-.css-information-content h2
-{
-    width: 60%;
-    background-color: #96d4d4;
-    padding: 30px;
-    color: black;
-}
-
 .javascript-information-content
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffc0c7;
+    padding: 50px;
 }
 
-.javascript-information-content-h1
-{
-    width: 40%;
-    height: 50%;
-    background-color: #ffc0c7;
-}
-
-.javascript-information-content-h1 h1
-{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background-color: #F3ecea;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-align: center;
-    font-size: 140px;
-    color: #242424;
-    /*-webkit-text-stroke: 0.5px #242424;*/
-    font-family: 'Poppins', sans-serif;
-}
-
-.javascript-information-content h2
-{
-    width: 60%;
-    background-color: #ffc0c7;
-    padding: 30px;
-    color: black;
+/*===Comuni===*/
+.html-information h2, .css-information h2, .javascript-information h2
+{   
+    z-index: 5;
+    padding: 50px;
 }
 /*-----------------------------------Box-icon-home----------------------------*/
 .box-icon
@@ -604,7 +577,7 @@ article ul
 }
 
 
-article h1,h2,h3,h4,h5,h6
+article h1,article h2,article h3,article h4,article h5,article h6
 {
     font-family: 'Nunito', sans-serif; 
     background-color: white;
@@ -1085,7 +1058,6 @@ p.paragrafo2
 
     .box-home
     {
-        background-color: #242424;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -1319,6 +1291,29 @@ p.paragrafo2
     footer p
     {
         width: 50%;
+    }
+
+    .typing
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .html-information h2, .css-information h2, .javascript-information h2
+    {
+        font-size: 22px;
+    }
+
+    .html-information h1, .css-information h1, .javascript-information-content h1
+    {
+        font-size: 60px;
+    }
+
+    .html-information, .css-information, .javascript-information
+    {
+        flex-direction: column;
     }
 }
 
