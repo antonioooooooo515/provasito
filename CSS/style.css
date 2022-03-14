@@ -185,6 +185,18 @@
     position: relative;
 }
 
+.a-s
+{
+    border-bottom: 2px solid #E34672;
+    border-radius: 0px;
+    transition: 0.5s ease;
+}
+
+.a-s:hover
+{
+    border-radius: 10px;
+}
+
 header
 {
     width: 100%;
@@ -1310,7 +1322,8 @@ p.paragrafo2
 
     .typing-box
     {
-        margin-top: 250px;
+        margin-top: 200px;
+        margin-bottom: -50px;
     }
 
     .typing
