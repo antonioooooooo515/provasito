@@ -185,6 +185,18 @@
     position: relative;
 }
 
+.a-s
+{
+    border-bottom: 2px solid #E34672;
+    border-radius: 0px;
+    transition: 0.5s ease;
+}
+
+.a-s:hover
+{
+    border-radius: 10px;
+}
+
 header
 {
     width: 100%;
@@ -786,9 +798,15 @@ nav li a:hover
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.form-section textarea 
+.form-section textarea
 {
+    display: block;
     resize: vertical;
+}
+
+.form-section .textarea
+{
+    display: none;
 }
   
 .form button 
@@ -1302,6 +1320,11 @@ p.paragrafo2
         width: 60%;
     }
 
+    .typing-box
+    {
+        margin-top: 250px;
+    }
+
     .typing
     {
         display: flex;
@@ -1328,6 +1351,19 @@ p.paragrafo2
         margin: 0;
         padding: 0;
     }
+
+
+
+
+    .form-section textarea
+    {
+        display: none;
+    }
+
+    .form-section .textarea
+    {
+        display: block;
+    }
 }
 
 
@@ -1349,9 +1385,13 @@ p.paragrafo2
     article
     {
         width: 90%;
-        margin-left: 50px;
-        margin-right: 0;
     }
+
+    aside
+    {
+        width: 10%;
+    }
+
 
     nav
     {
