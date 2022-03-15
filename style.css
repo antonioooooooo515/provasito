@@ -15,6 +15,14 @@
     --box-icon-inner: #1C2120;
 }
 
+.banner-pubblicita
+{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Menù*/
 .logo
 {
@@ -301,12 +309,15 @@ header li a:hover
     justify-content: center;
     align-items: center;
     z-index: 3;
+    /*background-image: linear-gradient(to right, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
 }
 
 .html-information h1, .html-information h2
 {
     background-color: #F3ecea;
     font-family: 'Poppins', sans-serif;
+    /*background: transparent;*/
 }
 
 /*CSS-INFORMATION*/
@@ -321,12 +332,14 @@ header li a:hover
     justify-content: center;
     align-items: center;
     z-index: 2;
+    /*background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);*/
 }
 
 .css-information h1, .css-information h2
 {
     background-color: #96d4d4;
     font-family: 'Poppins', sans-serif;
+    /*background: transparent;*/
 }
 
 /*JAVASCRIPT-INFORMATION*/
@@ -342,12 +355,14 @@ header li a:hover
     justify-content: center;
     align-items: center;
     z-index: 1;
+    /*background-image: linear-gradient(to left, #f093fb 0%, #f5576c 100%);*/
 }
 
 .javascript-information h1, .javascript-information h2
 {
     background-color: #ffc0c7;
     font-family: 'Poppins', sans-serif;
+    /*background: transparent;*/
 }
 
 .javascript-information-content
@@ -370,6 +385,7 @@ header li a:hover
 .javascript-information-content
 {
     background-color: #ffc0c7;
+    background: transparent;
 }
 
 .javascript-information-content h1
@@ -1262,7 +1278,6 @@ p.paragrafo2
         background-color: #242424;
         border-radius: 10px;
         transition: 0.5s ease;
-        letter-spacing: 2px;
         margin: 0;
     }
     
@@ -1322,7 +1337,8 @@ p.paragrafo2
 
     .typing-box
     {
-        margin-top: 250px;
+        margin-top: 200px;
+        margin-bottom: -50px;
     }
 
     .typing
