@@ -21,6 +21,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.banner-pubblicita iframe
+{
+    margin-bottom: 20px;
 }
 
 /*Menù*/
@@ -231,6 +237,7 @@ header li
 {
     float: left;
     padding: 5px 0;
+    background: transparent;
 }
 
 header li a 
