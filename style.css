@@ -26,7 +26,21 @@
 
 .banner-pubblicita iframe
 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.btn
+{
+    margin-top: 20px;
+    background-color: #E34672;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 /*Menù*/
