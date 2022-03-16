@@ -15,6 +15,24 @@
     --box-icon-inner: #1C2120;
 }
 
+@font-face 
+{
+    font-family: 'mathlete';
+    src: url('Font/Mathlete-Bulky-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'SoulMaze Outlined';
+    src: url('Font/MADESoulmazeOutline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*===============================================================*/
+
 .btn
 {
     margin-top: 20px;
@@ -247,13 +265,16 @@ header li a
     font-family: 'Impact';
     color: white;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 65px;
     /*font-weight: bold;*/
     font-weight: 100;
     transition: all 0.3s ease 0s;
     border-radius: 10px;
     padding: 10px 20px;
     display: inline-block;
+    font-family: 'mathlete';
+    /*font-family: 'SoulMaze Outlined';
+    font-size: 40px;*/
 }
   
 header li a:hover
@@ -261,7 +282,7 @@ header li a:hover
     background-color: #E34672;
     color: white;
     padding: 20px 35px;
-    font-size: 37px;
+    font-size: 70px;
 }
 
 .carattere
@@ -274,7 +295,9 @@ header li a:hover
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
     color: white;
-    font-size: 30px;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
     transition: all 0.3s ease 0s;
 }
 
@@ -374,11 +397,6 @@ header li a:hover
     /*background: transparent;*/
 }
 
-.javascript-information-content
-{
-    background-color: transparent;
-}
-
 .html-information h1, .css-information h1
 {
     text-transform: uppercase;
@@ -389,12 +407,20 @@ header li a:hover
     /*-webkit-text-stroke: 0.5px #242424;*/
     font-family: 'Poppins', sans-serif;
     padding: 40px;
+    width: 40%;
 }
 
 .javascript-information-content
 {
     background-color: #ffc0c7;
     background: transparent;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    width: 40%;
 }
 
 .javascript-information-content h1
@@ -406,11 +432,7 @@ header li a:hover
     color: #242424;
     /*-webkit-text-stroke: 0.5px #242424;*/
     font-family: 'Poppins', sans-serif;
-}
-
-.javascript-information-content
-{
-    padding: 50px;
+    margin-left: 20px;
 }
 
 /*===Comuni===*/
@@ -418,6 +440,16 @@ header li a:hover
 {   
     z-index: 5;
     padding: 50px;
+    width: 60%;
+}
+
+.html-information h1, .css-information h1, .javascript-information-content h1
+{
+    font-family: 'SoulMaze Outlined';
+    font-size: 8em;
+    background: linear-gradient(90deg, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 /*-----------------------------------Box-icon-home----------------------------*/
 .box-icon
@@ -1361,11 +1393,13 @@ p.paragrafo2
     .html-information h2, .css-information h2, .javascript-information h2
     {
         font-size: 18px;
+        width: 85%;
     }
 
     .html-information h1, .css-information h1, .javascript-information-content h1
     {
         font-size: 60px;
+        width: 100%;
     }
 
     .html-information, .css-information, .javascript-information, .javascript-information-content
@@ -1375,6 +1409,15 @@ p.paragrafo2
         flex-direction: column;
         margin: 0;
         padding: 0;
+    }
+
+    .javascript-information-content{
+        margin-top: 30px;
+    }
+
+    .javascript-information-content h1
+    {
+        margin-left: 0px;
     }
 
 
