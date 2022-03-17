@@ -31,6 +31,14 @@
     font-style: normal;
 }
 
+@font-face 
+{
+    font-family: 'SoulMaze';
+    src: url('Font/MADESoulmaze.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*===============================================================*/
 
 .btn
@@ -72,16 +80,45 @@
 .typing-box
 {
     height: 500px;
-    margin-top: 400px;
-    width: 80%;
+    margin-top: 250px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     background-color: #24252A;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .typing
 {
     display: inline-flex;
+}
+
+.typing-box-2 h1
+{
+    font-size: 80px;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.typing-box-2 h2
+{
+    font-size: 45px;
+    font-family: 'Poppins';
+    color: white;
+    align-items: center;
+}
+
+.h2
+{
+    display: flex;
+    align-items: center;
+}
+
+.h2 h2:nth-child(2)
+{
+    margin-left: 17px;
 }
 
 .typing .typing-static-text
@@ -273,6 +310,8 @@ header li a
     padding: 10px 20px;
     display: inline-block;
     font-family: 'mathlete';
+    font-family: 'SoulMaze';
+    font-size: 30px;
     /*font-family: 'SoulMaze Outlined';
     font-size: 40px;*/
 }
@@ -282,7 +321,12 @@ header li a:hover
     background-color: #E34672;
     color: white;
     padding: 20px 35px;
-    font-size: 70px;
+    font-size: 50px;
+}
+
+header li a:hover .homebutton
+{
+    font-size: 45px;
 }
 
 .carattere
@@ -407,6 +451,7 @@ header li a:hover
     /*-webkit-text-stroke: 0.5px #242424;*/
     font-family: 'Poppins', sans-serif;
     padding: 40px;
+    width: 40%;
 }
 
 .javascript-information-content
@@ -419,6 +464,7 @@ header li a:hover
     align-items: center;
     flex-direction: column;
     padding: 40px;
+    width: 40%;
 }
 
 .javascript-information-content h1
@@ -438,6 +484,7 @@ header li a:hover
 {   
     z-index: 5;
     padding: 40px;
+    width: 60%;
 }
 
 .html-information h1, .css-information h1, .javascript-information-content h1
@@ -1272,7 +1319,7 @@ p.paragrafo2
         list-style-type: none;
         transition: 0.5s;
         position: relative;
-        margin-top: 180px;
+        margin-top: 250px;
     }
     
     .menu.barraaperta ul
@@ -1309,7 +1356,7 @@ p.paragrafo2
     .menu ul li a
     {
         text-decoration: none;
-        font-size: 25px;
+        font-size: 30px;
         padding: 15px 20px;
         color: white;
         background-color: #242424;
@@ -1320,6 +1367,7 @@ p.paragrafo2
     
     .menu ul li a:hover
     {
+        font-size: 35px;
         padding: 25px 30px;
         background-color: #E34672;
     }
@@ -1374,7 +1422,30 @@ p.paragrafo2
 
     .typing-box
     {
-        margin-top: 200px;
+        margin-top: 300px;
+        flex-direction: column;
+        margin-bottom: 250px;
+    }
+
+    .typing-box-2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @media (max-width: 520px)
+    {
+        .h2
+        {
+            flex-direction: column;
+        }
+
+        .h2 h2:nth-child(2)
+        {
+            margin-left: 0;
+        }
     }
 
     .typing
@@ -1383,6 +1454,8 @@ p.paragrafo2
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-left: 0;
+        margin-top: 20px;
     }
 
     .html-information h2, .css-information h2, .javascript-information h2
