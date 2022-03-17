@@ -39,7 +39,71 @@
     font-style: normal;
 }
 
+@font-face 
+{
+    font-family: 'Easysans';
+    src: url('Font/Easysans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Adagietto';
+    src: url('Font/Adagietto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Another';
+    src: url('Font/Another.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'OneDay';
+    src: url('Font/ONEDAY.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Volvo';
+    src: url('Font/VolvoBroad.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*===============================================================*/
+.pubbl
+{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.privacy-policy
+{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.privacy-policy a
+{
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
 
 .btn
 {
@@ -80,14 +144,14 @@
 .typing-box
 {
     height: 500px;
-    margin-top: 250px;
+    margin-top: 300px;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     background-color: #24252A;
-    display: flex;
+    /*display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;*/
 }
 
 .typing
@@ -310,8 +374,10 @@ header li a
     padding: 10px 20px;
     display: inline-block;
     font-family: 'mathlete';
-    font-family: 'SoulMaze';
-    font-size: 30px;
+    /*font-family: 'SoulMaze';*/
+    font-size: 60px;
+    font-family: 'Easysans';
+    font-family: 'Volvo';
     /*font-family: 'SoulMaze Outlined';
     font-size: 40px;*/
 }
@@ -321,12 +387,12 @@ header li a:hover
     background-color: #E34672;
     color: white;
     padding: 20px 35px;
-    font-size: 50px;
+    font-size: 75px;
 }
 
 header li a:hover .homebutton
 {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .carattere
@@ -339,7 +405,7 @@ header li a:hover .homebutton
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     padding: 0;
     margin: 0;
     transition: all 0.3s ease 0s;
@@ -1319,7 +1385,7 @@ p.paragrafo2
         list-style-type: none;
         transition: 0.5s;
         position: relative;
-        margin-top: 250px;
+        margin-top: 270px;
     }
     
     .menu.barraaperta ul
@@ -1356,7 +1422,6 @@ p.paragrafo2
     .menu ul li a
     {
         text-decoration: none;
-        font-size: 30px;
         padding: 15px 20px;
         color: white;
         background-color: #242424;
@@ -1367,8 +1432,8 @@ p.paragrafo2
     
     .menu ul li a:hover
     {
-        font-size: 35px;
-        padding: 25px 30px;
+        font-size: 85px;
+        padding: 30px 35px;
         background-color: #E34672;
     }
 
