@@ -79,6 +79,38 @@
     font-style: normal;
 }
 
+@font-face 
+{
+    font-family: 'SmilingDreamer';
+    src: url('Font/SmilingDreamer.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'PaperDaisy';
+    src: url('Font/paperdaisy-demo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'SourCandy';
+    src: url('Font/SourCandy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'SimplyBites';
+    src: url('Font/SimplyBites.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*===============================================================*/
 .pubbl
 {
@@ -271,7 +303,6 @@
 }
 
 /*==========================================================*/
-
 .home-principale
 {
     display: flex;
@@ -359,6 +390,12 @@ header li
     background: transparent;
 }
 
+.sub-menu
+{
+    display: none;
+}
+
+
 header li a 
 {
     /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
@@ -366,7 +403,6 @@ header li a
     font-family: 'Impact';
     color: white;
     text-decoration: none;
-    font-size: 65px;
     /*font-weight: bold;*/
     font-weight: 100;
     transition: all 0.3s ease 0s;
@@ -375,9 +411,11 @@ header li a
     display: inline-block;
     font-family: 'mathlete';
     /*font-family: 'SoulMaze';*/
-    font-size: 60px;
+    font-size: 45px;
     font-family: 'Easysans';
     font-family: 'Volvo';
+    font-family: 'SmilingDreamer';
+    font-family: 'SourCandy';
     /*font-family: 'SoulMaze Outlined';
     font-size: 40px;*/
 }
@@ -387,12 +425,12 @@ header li a:hover
     background-color: #E34672;
     color: white;
     padding: 20px 35px;
-    font-size: 75px;
+    font-size: 50px;
 }
 
 header li a:hover .homebutton
 {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .carattere
@@ -405,7 +443,7 @@ header li a:hover .homebutton
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     padding: 0;
     margin: 0;
     transition: all 0.3s ease 0s;
@@ -862,6 +900,11 @@ nav li a:hover .frecciagiù
     transform: rotate(-90deg);
 } 
 
+.second-menu
+{
+    display: none;
+}
+
 /*-------------------------------------------------------------------*/
 .first-lateralbar
 {
@@ -1234,6 +1277,13 @@ p.paragrafo2
     border-radius: 10px;
 }
 
+/*==================Altro==================*/
+
+.second-menu
+{
+    display: none;
+}
+
 
 /*==================Responsive==================*/
 @media (max-width: 1080px)
@@ -1291,6 +1341,11 @@ p.paragrafo2
     .javascript
     {
         animation-delay: 140000s;
+    }
+
+    .a-s
+    {
+        border: none;
     }
 
     .menu
@@ -1352,6 +1407,7 @@ p.paragrafo2
         background-color: white;
         transform: translateY(-8px);
         transition: 0.5s ease;
+        border-radius: 10px;
     }
     
     .menu .menù-toggle .menù-toggle-content::after
@@ -1364,6 +1420,7 @@ p.paragrafo2
         transform: translateY(8px);
         transition: 0.5s ease;
         box-shadow: 0 -8px 0 white;
+        border-radius: 10px;
     }
     
     .menu.barraaperta .menù-toggle .menù-toggle-content::before
@@ -1412,11 +1469,13 @@ p.paragrafo2
     .homebutton
     {
         color: white;
+        font-size: 35px;
     }
 
     .menu ul li a:hover .homebutton
     {
         color: white;
+        font-size: 40px;
     }
     
     .menu ul li a
@@ -1428,12 +1487,13 @@ p.paragrafo2
         border-radius: 10px;
         transition: 0.5s ease;
         margin: 0;
+        font-size: 35px;
     }
     
     .menu ul li a:hover
     {
-        font-size: 85px;
-        padding: 30px 35px;
+        font-size: 45px;
+        padding: 20px 35px;
         background-color: #E34672;
     }
 
@@ -1487,9 +1547,9 @@ p.paragrafo2
 
     .typing-box
     {
-        margin-top: 300px;
+        margin-top: 200px;
         flex-direction: column;
-        margin-bottom: 250px;
+        margin-bottom: 150px;
     }
 
     .typing-box-2
@@ -1562,8 +1622,6 @@ p.paragrafo2
     }
 
 
-
-
     .form-section textarea
     {
         display: none;
@@ -1573,6 +1631,85 @@ p.paragrafo2
     {
         display: block;
     }
+
+    nav
+    {
+        display: none;
+    }
+    
+    aside
+    {
+        display: none;
+    }
+
+    article
+    {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        height: auto;
+    }
+
+    .second-menu
+    {
+        display: none;
+    }
+
+    .sub-menu
+    {
+        display: block;
+        margin-top: 650px;
+    }
+
+    .sub-menu ul li
+    {
+        width: auto;
+    }
+
+    .sub-menu ul li a
+    {
+        padding: 13px 10px;
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        border-radius: 10px;
+        transition: all 0.4s ease 0s;
+        position: relative;
+        display: block;
+        font-family: 'SmilingDreamer';
+        position: relative;
+        margin: 0;
+        width: max-content;
+        overflow: hidden;
+    }
+
+    .sub-menu ul li a:hover
+    {
+        padding: 13px 10px;
+        font-size: 30px;
+        background: #242424;
+    }
+
+    .sub-menu ul li a::before
+    {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 10%;
+        width: 100%;
+        height: 3px;
+        transform: scale(0);
+        transform-origin: right;
+        transition: transform 0.4s ease;
+        background: #E34672;
+    }
+
+    .sub-menu ul li a:hover::before
+    {
+        transform: scale(1);
+        transform-origin: left;
+    }
+
 }
 
 
@@ -1583,22 +1720,26 @@ p.paragrafo2
 
 
 
-@media (max-width: 1500px)
+@media (max-width: 1500px) and (min-width: 1081px)
 {
     section
     {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     article
     {
         width: 90%;
+        margin: 0 auto;
+        margin-bottom: 200px;
     }
 
     aside
     {
         width: 10%;
+        display: none;
     }
 
 
@@ -1607,47 +1748,83 @@ p.paragrafo2
         display: none;
         margin: 0;
     }
-    
-    .lateralbar-secondaria
+
+    .sub-menu
     {
-        display: flex;
-        margin: 0 auto;
-        padding: 0 0;
-        justify-content: center;
-        height: auto;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        position: relative;
+        display: none;
     }
 
-    .lateralbar-secondaria ul
+    .second-menu
+    {
+        display: block;
+    }
+    
+    .second-menu
+    {
+        margin: 0 auto;
+        padding: 0 0;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 150px;
+        width: 95%;
+    }
+
+    .second-menu ul
     {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        flex-direction: row;
-        display: flex;
+        height: auto;
+        display: block;
     }
 
-    .lateralbar-secondaria ul li a
+    .second-menu ul li
+    {
+        display: inline-block;
+        height: auto;
+        width: auto;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .second-menu ul li a
     {
         color: #000;
-        padding: 13px 16px;
+        padding: 13px 10px;
         text-decoration: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 16px;
+        font-size: 28px;
         color: white;
-        border: 4px solid #E34672;
         border-radius: 10px;
         transition: all 0.4s ease 0s;
         position: relative;
+        display: block;
+        font-family: 'SmilingDreamer';
+        text-align: center;
+        position: relative;
+        margin: 0;
+        width: auto;
+        overflow: hidden;
     }
 
-    .lateralbar-secondaria ul li a:hover
+    .second-menu ul li a::before
     {
-        font-size: 18px;
-        padding: 19px 22px;
-        background-color: #E34672;
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 10%;
+        width: 100%;
+        height: 3px;
+        transform: scale(0);
+        transform-origin: right;
+        transition: transform 0.4s ease;
+        background: #E34672;
+    }
+
+    .second-menu ul li a:hover::before
+    {
+        transform: scale(1);
+        transform-origin: left;
     }
 
     .lateralbar-secondaria ul li a:hover .frecciagiù
