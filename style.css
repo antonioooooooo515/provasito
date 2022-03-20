@@ -1343,11 +1343,6 @@ p.paragrafo2
         animation-delay: 140000s;
     }
 
-    .a-s
-    {
-        border: none;
-    }
-
     .menu
     {
         position: absolute;
@@ -1484,7 +1479,6 @@ p.paragrafo2
         padding: 15px 20px;
         color: white;
         background-color: #242424;
-        border-radius: 10px;
         transition: 0.5s ease;
         margin: 0;
         font-size: 35px;
@@ -1587,6 +1581,7 @@ p.paragrafo2
     {
         font-size: 18px;
         margin: 0;
+        width: 85%;
     }
 
     .html-information h1, .css-information h1, .javascript-information-content h1
@@ -1650,6 +1645,29 @@ p.paragrafo2
         height: auto;
     }
 
+    .menu-separetion
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        background: transparent;
+        display: none;
+    }
+
+    .menu-separetion-content
+    {
+        background: rgb(255, 250, 250, 0.5);
+        height: 3px;
+        width: 80%;
+    }
+
+    .menu.menu.barraaperta .menu-separetion
+    {
+        display: block;
+        display: flex
+    }
+
     .second-menu
     {
         display: none;
@@ -1658,7 +1676,8 @@ p.paragrafo2
     .sub-menu
     {
         display: block;
-        margin-top: 650px;
+        margin-top: 450px;
+        margin-left: 10px;
     }
 
     .sub-menu ul li
@@ -1708,6 +1727,14 @@ p.paragrafo2
     {
         transform: scale(1);
         transform-origin: left;
+    }
+
+    
+    a .a-s
+    {
+        border-bottom: 2px solid #E34672;
+        border-radius: 0px;
+        transition: 0.5s ease;
     }
 
 }
