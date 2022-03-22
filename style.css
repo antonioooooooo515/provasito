@@ -1350,8 +1350,9 @@ p.paragrafo2
         top: 0;
         width: 75px;
         height: 75px;
-        transition: 0.2s ease-out;
+        transition: 0.3s ease-out;
     }
+    
     
     .menu.barraaperta
     {
@@ -1401,7 +1402,7 @@ p.paragrafo2
         height: 3px;
         background-color: white;
         transform: translateY(-8px);
-        transition: 0.5s ease;
+        transition: 0.4s ease;
         border-radius: 10px;
     }
     
@@ -1413,21 +1414,21 @@ p.paragrafo2
         height: 3px;
         background-color: white;
         transform: translateY(8px);
-        transition: 0.5s ease;
+        transition: 0.4s ease;
         box-shadow: 0 -8px 0 white;
         border-radius: 10px;
     }
     
     .menu.barraaperta .menù-toggle .menù-toggle-content::before
     {
-        transform: translateY(0px) rotate(45deg);
+        transform: translateY(0px) rotate(405deg);
         background-color: white;
     }
     
     .menu.barraaperta .menù-toggle .menù-toggle-content::after
     {
-        transform: translateY(0px) rotate(-45deg);
-        box-shadow: 0 -8px 0 transparent;
+        transform: translateY(0px) rotate(-225deg);
+        box-shadow: 0px -8px 0 transparent;
         background-color: white;
     }
     
