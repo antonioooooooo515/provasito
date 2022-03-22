@@ -1581,12 +1581,14 @@ p.paragrafo2
     {
         font-size: 18px;
         margin: 0;
-        width: 85%;
+        padding: 20px;
+        width: 80%;
+        
     }
 
     .html-information h1, .css-information h1, .javascript-information-content h1
     {
-        font-size: 60px;
+        font-size: 65px;
         width: 100%;
         padding: 0;
         margin: 0;
