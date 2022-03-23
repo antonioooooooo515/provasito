@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS | HTML/Input</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a> 
+      <div class="menu">
+        <div class="menù-toggle">
+          <div class="menù-toggle-content"></div>
+        </div>
+
+        <ul>
+            <li><a href="../index.html"><i class='bx bxs-home homebutton'></i></a></li>
+            <li><a href="htmlgenerale.html" class="a-s">HTML</a></li>
+            <li><a href="../CSS/cssgenerale.html">CSS</a></li>
+            <li><a href="">JAVASCRIPT</a></li>
+        </ul>
+
+        <div class="menu-separetion">
+          <div class="menu-separetion-content"></div>
+        </div>
+
+        <div class="sub-menu">
+          <ul>
+            <li><a href="htmlgenerale.html">Generale</a></li>
+            <li><a href="body.html">Body</a></li>
+            <li><a href="formattazione.html">Formattazione</a></li>
+            <li><a href="carattere.html">Carattere</a></li>
+            <li><a href="intestazione.html">Intestazione</a></li>
+            <li><a href="stile.html">Stile</a></li>
+            <li><a href="allineamento.html">Allineamento</a></li>
+            <li><a href="elenchi.html">Elenchi</a></li>
+            <li><a href="immagini.html">Immagini</a></li>
+            <li><a href="link.html">Link</a></li>
+            <li><a href="tabelle.html">Tabelle</a></li>
+            <li><a href="audio e video.html">File audio e video</a></li>
+          </ul>
+        </div>
+    </div>
+    <a href="https://www.instagram.com/_antonioserrano_/?hl=en" target="_blank"><img class="insta" src="../Immagini/Instagram-icon.png" width="70px"></a>
+  </header>
+
+  <div class="second-menu">
+    <ul>
+      <li><a href="htmlgenerale.html">Generale</a></li>
+      <li><a href="body.html">Body</a></li>
+      <li><a href="formattazione.html">Formattazione</a></li>
+      <li><a href="carattere.html">Carattere</a></li>
+      <li><a href="intestazione.html">Intestazione</a></li>
+      <li><a href="stile.html">Stile</a></li>
+      <li><a href="allineamento.html">Allineamento</a></li>
+      <li><a href="elenchi.html">Elenchi</a></li>
+      <li><a href="immagini.html">Immagini</a></li>
+      <li><a href="link.html">Link</a></li>
+      <li><a href="tabelle.html">Tabelle</a></li>
+      <li><a href="audio e video.html">File audio e video</a></li>
+    </ul>
+  </div>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a class="first-lateralbar" href="htmlgenerale.html">Generale</a></li>
+          <li><a href="body.html">Body</a></li>
+          <li><a href="formattazione.html">Formattazione</a></li>
+          <li><a href="carattere.html">Carattere</a></li>
+          <li><a href="intestazione.html">Intestazione</a></li>
+          <li><a href="stile.html">Stile</a></li>
+          <li><a href="allineamento.html">Allineamento</a></li>
+          <li><a href="elenchi.html">Elenchi</a></li>
+          <li><a href="immagini.html">Immagini</a></li>
+          <li><a href="link.html">Link</a></li>
+          <li><a href="tabelle.html">Tabelle</a></li>
+          <li><a href="audio e video.html">File audio e video</a></li>
+        </ul>
+      </nav>
+        
+        <article class="input-article">
+          <h1 class="titolo">Input</h1>
+          <br>
+
+          <h2>
+            Il tag <span class="input-span">&#60input></span> è utilizzato per interagire con l'utente attraverso i suoi attributi. Eccoli:
+          </h2>
+
+          <h3 class="sottotitolo">Button</h3>
+          <p>
+              L'attributo <span class="input-span">"button"</span> definisce un bottone.
+          </p>
+
+          <fieldset>
+              <label>Button</label>
+              <input class="button" type="button" required>  
+          </fieldset>
+
+          <h3 class="sottotitolo">Checkbox</h3>
+          <p>
+              L'attributo <span class="input-span">"checkbox"</span> definisce un insieme di opzioni limitate tra cui l'utente può scegliere.
+          </p>
+
+          <fieldset>
+              <label>Checkbox</label>
+              <div class="checkbox">
+                  <input type="checkbox" id="conoscenze-informatiche" required >
+                  <label for="conoscenze-informatiche">Primo</label>
+                  <input type="checkbox" id="conoscenze-informatiche" required >
+                  <label for="conoscenze-informatiche">Secondo</label>
+                  <input type="checkbox" id="conoscenze-informatiche" required >
+                  <label for="conoscenze-informatiche">Terzo</label>
+              </div>
+          </fieldset>
+
+          <h3 class="sottotitolo">Color</h3>
+          <p>
+              L'attributo <span class="input-span">"color"</span> è utilizzato per l'inserimento di un colore attraverso una paletta.
+          </p>
+
+          <fieldset>
+              <label>Color</label>
+              <input class="normal-input" type="color" style="cursor: pointer;">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Date</h3>
+          <p>
+              L'attributo <span class="input-span">"date"</span> è utilizzato per l'inserimento di una data.
+          </p>
+
+          <fieldset>
+              <label>Date</label>
+              <input class="normal-input" type="date">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Datetime-local</h3>
+          <p>
+              L'attributo <span class="input-span">"datetime-local"</span> è utilizzato per l'inserimento di data e ora.
+          </p>
+
+          <fieldset>
+              <label>Datetime-local</label>
+              <input class="normal-input" type="datetime-local" required>  
+          </fieldset>
+
+          <h3 class="sottotitolo">Email</h3>
+          <p>
+              L'attributo <span class="input-span">"email"</span> è utilizzato per l'inserimento di un indirizzo email.
+          </p>
+          
+          <fieldset>
+              <label>Email</label>
+              <input class="normal-input" type="email" required placeholder="Email...">  
+          </fieldset>
+
+          <h3 class="sottotitolo">File</h3>
+          <p>
+              L'attributo <span class="input-span">"file"</span> è utilizzato per l'inserimento di un file attraverso un pulsante.
+          </p>
+
+          <fieldset>
+              <label>File</label>
+              <input class="normal-input" type="file">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Hidden</h3>
+          <p>
+              L'attributo <span class="input-span">"hidden"</span> definisce un campo di input non visibile all'utente. Vine eutilizzato, di solito, per includere dati che non possono essere modificati o visualizzati quando viene inviato un modulo. (Anche se il valore non è visibile nella pagine, può essere modificato utilizzando gli strumenti di sviluppatore da "Visualizza sorgente" nei vari browser.)
+          </p>
+
+          <fieldset>
+              <label>Hidden</label>
+              <input class="normal-input" type="hidden">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Image</h3>
+          <p>
+              L'attributo <span class="input-span">"image"</span> definisce un immagine come pulsante d'invio. (Il percorso è specificato dall'attributo "src".)
+          </p>
+
+          <fieldset>
+              <label>Image</label>
+              <input class="normal-input-img" type="image" src="Logo.png">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Month</h3>
+          <p>
+              L'attributo <span class="input-span">"month"</span> definisce un campo dove l'utente può selezionare un mese e un anno.
+          </p>
+
+          <fieldset>
+              <label>Month</label>
+              <input class="normal-input" type="month">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Number</h3>
+          <p>
+              L'attributo <span class="input-span">"number"</span> definisce un campo di input numerico, che può anche accettare restrizioni su quali numeri vengono accettati.
+          </p>
+
+          <fieldset>
+              <label>Number</label>
+              <input class="normal-input" type="number" min="0" max="10" placeholder="1,2,3,4...">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Password</h3>
+          <p>
+              L'attributo <span class="input-span">"password"</span> definisce un campo password. I caratteri inseriti vengono visualizzati sottoforma di asterisco (*).
+          </p>
+
+          <fieldset>
+              <label>Password</label>
+              <input class="normal-input" type="password" placeholder="********">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Radio</h3>
+          <p>
+              L'attributo <span class="input-span">"radio"</span> definisce un pulsante di opzione, che consente di selezionare SOLO UNA tra quelle disponibili.
+          </p>
+
+          <fieldset>
+              <label>Radio</label>
+              <div class="radio">
+                  <input type="radio" id="primoradio" value="Primo" name="radio-scelta">
+                  <label for="primoradio">Primo</label><br>
+                  <input type="radio" id="secondoradio" value="Secondo" name="radio-scelta">
+                  <label for="secondoradio">Secondo</label><br>  
+                  <input type="radio" id="terzoradio" value="Terzo" name="radio-scelta">
+                  <label for="terzoradio">Terzo</label>
+              </div>
+          </fieldset>
+
+          <h3 class="sottotitolo">Range</h3>
+          <p>
+              L'attributo <span class="input-span">"range"</span> definisce un controllo per inserire un valore compreso tra altri due (per esempio tra 0 e 10). Le restrizioni vengono effettuare secondo i seguenti attributi:
+              <ul style="font-size: 20px;">
+                  <li>max, che indica il valore massimo;</li>
+                  <li>min, che indica il valore minimo;</li>
+                  <li>step, che indica gli intervalli di numeri possibili;</li>
+                  <li>value, che indica un valore predefinito;</li>
+              </ul>
+          </p>
+
+          <fieldset>
+              <label>Range</label>
+              <input class="normal-input" type="range" min="0" max="10" placeholder="Livello...">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Reset</h3>
+          <p>
+              L'attributo <span class="input-span">"reset"</span> definisce un pulsante di ripristino dei valori nel modulo a quelli predefiniti.
+          </p>
+
+          <fieldset>
+              <label>Reset</label>
+              <input class="normal-input reset-input" type="reset">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Search</h3>
+          <p>
+              L'attributo <span class="input-span">"search"</span> è utilizzato per i campi di ricerca (si comporta come un normale campo di testo).
+          </p>
+
+          <fieldset>
+              <label>Search</label>
+              <input class="normal-input" type="search" placeholder="Cerca...">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Submit</h3>
+          <p>
+              L'attributo <span class="input-span">"submit"</span> definisce un pulsante che invia tutti i valori del modulo ad un gestore, specificato nell'attributo "action".
+          </p>
+
+          <fieldset>
+              <label>Submit</label>
+              <input class="invia" type="submit">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Tel</h3>
+          <p>
+              L'attributo <span class="input-span">"tel"</span> è utilizzato per i campi che devono contenere un numero di telefono.
+          </p>
+
+          <fieldset>
+              <label>Tel</label>
+              <input class="normal-input" type="tel" required placeholder="123 456 7890..." pattern="[0-9]">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Text</h3>
+          <p>
+              L'attributo <span class="input-span">"text"</span> definisce un campo di input di testo a singola riga.
+          </p>
+
+          <fieldset>
+              <label>Text</label>
+              <input class="normal-input" type="text" required placeholder="Il tuo testo...">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Time</h3>
+          <p>
+              L'attributo <span class="input-span">"time"</span> definisce un campo per inserire un'oram, senza alcun fuso orario.
+          </p>
+
+          <fieldset>
+              <label>Time</label>
+              <input class="normal-input" type="time" required>  
+          </fieldset>
+
+          <h3 class="sottotitolo">Url</h3>
+          <p>
+              L'attributo <span class="input-span">"url"</span> è utilizzato per i campi di input contenenti indirizzi URL.
+          </p>
+
+          <fieldset>
+              <label>Url</label>
+              <input class="normal-input" type="url" placeholder="Sito web...">  
+          </fieldset>
+
+          <h3 class="sottotitolo">Week</h3>
+          <p>
+              L'attributo <span class="input-span">"week"</span> definisce un campo per selezionare una settimana e un anno.
+          </p>
+
+          <fieldset>
+              <label>Week</label>
+              <input class="normal-input" type="week">  
+          </fieldset>
+        </article>
+
+        <aside>
+          
+        </aside>
+  </section>
+
+
+  <!--Footer-->
+  <footer>
+    <p style="background-color: black; color: white;">
+      &copy Copyright 2022 Antonio Serranò | All rights reserved
+    </p>
+  
+    <img src="../Immagini/Logo.png" width="100px">
+  </footer>
+
+  <script>
+    const menùtoggle = document.querySelector('.menù-toggle');
+    const menu = document.querySelector('.menu');
+    
+    menùtoggle.onclick = function()
+    {
+        menu.classList.toggle('barraaperta');
+    }
+  </script>
+    
+</body>
+</html>

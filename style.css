@@ -112,7 +112,7 @@
 }
 
 /*===============================================================*/
-.pubbl
+/*.pubbl
 {
     margin-top: 200px;
     margin-bottom: 200px;
@@ -149,7 +149,7 @@
     cursor: pointer;
     text-decoration: none;
     color: white;
-}
+}*/
 
 /*Menù*/
 .logo
@@ -172,12 +172,132 @@
     width: 85px;
 }
 
+.homepage-first
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.card
+{
+    width: 400px;
+    height: 500px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    
+    perspective: 1000px;
+    transition: 0.5s ease;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.card-front, .card-back
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s ease;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.card-front
+{
+    transform: rotateY(0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front img, .card-back h1
+{
+    background: transparent;
+}
+
+.card-back
+{
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-front
+{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-back
+{
+    transform: rotateY(0deg);
+}
+
+.card-back-information
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+}
+
+.write-neon
+{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.write-neon h2
+{
+    font-size: 50px;
+    color: #E34672;
+    background: transparent;
+    text-align: center;
+}
+
+.write-neon h2 span
+{
+    animation: neon 5s linear infinite;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.write-neon h2 span:last-child
+{
+    animation-delay: 0.1s;
+}
+
+@keyframes neon
+{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+    {
+        color: #E34672;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%
+    {
+        color: #fff;
+        text-shadow: 
+        0 0 10px deeppink,
+        0 0 20px deeppink,
+        0 0 40px deeppink,
+        0 0 80px deeppink,
+        0 0 160px deeppink,
+        0 0 320px deeppink,
+        0 0 640px deeppink;
+    }
+}
+
 /*=============================Typinng Home=============================*/
 .typing-box
 {
     height: 500px;
     margin-top: 300px;
-    width: 85%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: #24252A;
@@ -415,9 +535,11 @@ header li a
     font-family: 'Easysans';
     font-family: 'Volvo';
     font-family: 'SmilingDreamer';
-    font-family: 'SourCandy';
-    /*font-family: 'SoulMaze Outlined';
+    /*font-family: 'SourCandy';*/
+    /*font-family: 'SoulMaze';
     font-size: 40px;*/
+    font-family: 'Poppins';
+    font-size: 40px;
 }
   
 header li a:hover
@@ -972,6 +1094,7 @@ nav li a:hover
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 0px;
 }
 
 .contact-content
@@ -992,6 +1115,14 @@ nav li a:hover
 {
     max-width: 320px;
     margin: 35px;
+}
+
+.form form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
   
 .form-section input, .form-section textarea 
@@ -1021,7 +1152,6 @@ nav li a:hover
 .form button 
 {
     width: 320px;
-    position: absolute;
     border: 0;
     margin-top: 20px;
     padding: 15px;
@@ -1037,19 +1167,20 @@ nav li a:hover
 {
     background-color: #333;
     color: white;
+    box-shadow: 0 2px 20px white;
 }
 
 .contact-information
 {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     position: relative;
+    margin-top: 0;
 }
 
 .contact-information .information
 {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .contact-information .information h1
@@ -1250,6 +1381,145 @@ p.paragrafo2
     border-left: 5px solid darkgray;
 }
 
+/*==========================Input=============================*/
+article fieldset label
+{
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    font-size: 20px;
+}
+
+article fieldset
+{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    position: relative;
+    background: white;
+}
+
+.input-article p
+{
+    font-size: 25px;
+    width: 70%;
+}
+
+.normal-input:not(.button)
+{
+    width: 40%;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+.normal-input-img
+{
+    width: 40%;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.button
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+.checkbox
+{
+    position: absolute;
+    right: 10px;
+}
+
+.radio
+{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+}
+
+.radio label
+{
+    background: transparent;
+    font-size: 20px;
+}
+
+.invia, .send
+{
+    width: 20%;
+    background-color: #000;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+}
+
+.reset-input
+{
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.reset-input:hover
+{
+    background-color: #E34672;
+    color: white;
+}
+
+.send:hover, .invia:hover
+{
+    background-color: #E34672;
+}
+
+article h3
+{
+    margin-top: 30px;
+}
+
+.input-span
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: darkmagenta;
+    background: white;
+}
+
+.titolo
+{
+    color: #E34672;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sottotitolo
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: #E34672;
+}
+
 /*==================Altri elementi pagina==================*/
 
 /*Selectiom*/
@@ -1389,7 +1659,7 @@ p.paragrafo2
     {
         margin: 23px;
         width: 30px;
-        height: 3px;
+        height: 5px;
         background-color: transparent;
         position: relative;
     }
@@ -1398,10 +1668,10 @@ p.paragrafo2
     {
         content: "";
         position: absolute;
-        width: 30px;
-        height: 3px;
+        width: 32px;
+        height: 5px;
         background-color: white;
-        transform: translateY(-8px);
+        transform: translateY(-10px);
         transition: 0.4s ease;
         border-radius: 10px;
     }
@@ -1410,25 +1680,25 @@ p.paragrafo2
     {
         content: "";
         position: absolute;
-        width: 30px;
-        height: 3px;
+        width: 32px;
+        height: 5px;
         background-color: white;
-        transform: translateY(8px);
+        transform: translateY(10px);
         transition: 0.4s ease;
-        box-shadow: 0 -8px 0 white;
+        box-shadow: 0 -10px 0 white;
         border-radius: 10px;
     }
     
     .menu.barraaperta .menù-toggle .menù-toggle-content::before
     {
-        transform: translateY(0px) rotate(405deg);
+        transform: translateY(0px) rotate(590deg);
         background-color: white;
     }
     
     .menu.barraaperta .menù-toggle .menù-toggle-content::after
     {
         transform: translateY(0px) rotate(-225deg);
-        box-shadow: 0px -8px 0 transparent;
+        box-shadow: 0px -10px 0 transparent;
         background-color: white;
     }
     
@@ -1542,9 +1812,9 @@ p.paragrafo2
 
     .typing-box
     {
-        margin-top: 200px;
+        margin-top: 180px;
         flex-direction: column;
-        margin-bottom: 150px;
+        margin-bottom: 40px;
     }
 
     .typing-box-2
@@ -1630,6 +1900,12 @@ p.paragrafo2
         display: block;
     }
 
+    .homepage-first
+    {
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
     nav
     {
         display: none;
@@ -1653,7 +1929,7 @@ p.paragrafo2
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 200px;
+        margin-top: 160px;
         background: transparent;
         display: none;
     }
@@ -1679,7 +1955,7 @@ p.paragrafo2
     .sub-menu
     {
         display: block;
-        margin-top: 450px;
+        margin-top: 520px;
         margin-left: 10px;
     }
 
@@ -1703,6 +1979,8 @@ p.paragrafo2
         margin: 0;
         width: max-content;
         overflow: hidden;
+        font-family: 'Poppins';
+        text-transform: uppercase;
     }
 
     .sub-menu ul li a:hover
@@ -1719,7 +1997,7 @@ p.paragrafo2
         left: 0;
         bottom: 10%;
         width: 100%;
-        height: 3px;
+        height: 5px;
         transform: scale(0);
         transform-origin: right;
         transition: transform 0.4s ease;
@@ -1733,7 +2011,7 @@ p.paragrafo2
     }
 
     
-    a .a-s
+    .a-s
     {
         border-bottom: 2px solid #E34672;
         border-radius: 0px;
@@ -1835,6 +2113,8 @@ p.paragrafo2
         margin: 0;
         width: auto;
         overflow: hidden;
+        font-family: 'Poppins';
+        text-transform: uppercase;
     }
 
     .second-menu ul li a::before
@@ -1844,7 +2124,7 @@ p.paragrafo2
         left: 0;
         bottom: 10%;
         width: 100%;
-        height: 3px;
+        height: 5px;
         transform: scale(0);
         transform-origin: right;
         transition: transform 0.4s ease;
