@@ -1657,8 +1657,8 @@ article h3
     
     .menu .menù-toggle .menù-toggle-content
     {
-        margin: 21px;
-        width: 32px;
+        margin: 23px;
+        width: 30px;
         height: 5px;
         background-color: transparent;
         position: relative;
@@ -1825,11 +1825,12 @@ article h3
         flex-direction: column;
     }
 
-    @media (max-width: 520px)
+    @media (max-width: 600px)
     {
         .h2
         {
             flex-direction: column;
+            align-items: center;
         }
 
         .h2 h2:nth-child(2)
