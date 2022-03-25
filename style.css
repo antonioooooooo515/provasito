@@ -151,6 +151,11 @@
     color: white;
 }*/
 
+body
+{
+    overflow-X: hidden;
+}
+
 /*Menù*/
 .logo
 {
@@ -483,7 +488,7 @@
 
 header
 {
-    width: 100%;
+    width: 100vw;
     display: flex;
     position: fixed;
     top: 0px;
@@ -540,6 +545,7 @@ header li a
     font-size: 40px;*/
     font-family: 'Poppins';
     font-size: 40px;
+    font-weight: bold;
 }
   
 header li a:hover
@@ -822,6 +828,8 @@ header li a:hover .homebutton
     letter-spacing: 2px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
 button a
@@ -1657,8 +1665,8 @@ article h3
     
     .menu .menù-toggle .menù-toggle-content
     {
-        margin: 23px;
-        width: 30px;
+        margin: 25px;
+        width: 32px;
         height: 5px;
         background-color: transparent;
         position: relative;
@@ -2017,6 +2025,11 @@ article h3
         border-bottom: 2px solid #E34672;
         border-radius: 0px;
         transition: 0.5s ease;
+    }
+
+    header
+    {
+        position: fixed;
     }
 
 }

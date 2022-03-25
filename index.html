@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="icon" href="Immagini/Prova Favicon.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -101,21 +103,21 @@
     </div>
     
     <div class="home-argoments" style="margin-bottom: 200px;">
-        <div class="html-information">
+        <div class="html-information" data-aos="fade-up-right">
             <h1>Html</h1>
             <h2>
                 L’HTML è un linguaggio per la scrittura di documenti ipertestuali che è stato studiato per essere utilizzato all’interno del WWW (World Wide Web). È basato sia sul protocollo per la trasmissione di documenti (HTTP), che sulla notazione perl’indirizzamento delle risorse (URL). Le pagine di un sito (costituite da documenti HTML) sono memorizzate su un server Web e vengono visualizzate dal browser del computer client attraverso l’utilizzo di un browser Web, come per esempio Chrome, Firefox, Opera, Safari e Internet Explorer. Quando l’utente digita l’indirizzo Web (URL) della pagina che vuole visitare, il sistema operativo richiede, attraverso una connessione HTTP, la pagina al server in cui è memorizzata e la scarica affinché possa essere visualizzata dal browser. Quando il server non trova la pagina, per errore di digitazione oppure per altri motivi, restituisce il codice di errore 404.
             </h2>
         </div>
         
-        <div class="css-information">
+        <div class="css-information" data-aos="fade-up-left">
             <h1>Css</h1>
             <h2>
                 Le pagine Web scritte in HTML non consentono di definire un layout adeguato, in quanto i vari elementi di cui è formato un documento (intestazione, barra di navigazione, piè pagina ecc.) possono essere collocati soltanto attraverso le tabelle. Grazie ai fogli di stile, invece, possiamo costruire il contenuto e successivamente applicarvi lo stile desiderato semplicemente variando la pagina dello stile.
             </h2>
         </div>
         
-        <div class="javascript-information">
+        <div class="javascript-information" data-aos="fade-up-right">
             <div class="javascript-information-content">
                 <h1>Java</h1>
                 <h1>Script</h1>
@@ -260,5 +262,16 @@
             menu.classList.toggle('barraaperta');
         }
     </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init
+    (
+        {
+            delay: 300,
+        }
+    );
+    </script>
+
 </body>
 </html>
