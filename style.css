@@ -287,13 +287,13 @@ body
     {
         color: #fff;
         text-shadow: 
-        0 0 10px deeppink,
-        0 0 20px deeppink,
-        0 0 40px deeppink,
-        0 0 80px deeppink,
-        0 0 160px deeppink,
-        0 0 320px deeppink,
-        0 0 640px deeppink;
+        0 0 10px #fc6d6d,
+        0 0 20px #fc6d6d,
+        0 0 40px #fc6d6d,
+        0 0 80px #fc6d6d,
+        0 0 160px #fc6d6d,
+        0 0 320px #fc6d6d,
+        0 0 640px #fc6d6d;
     }
 }
 
@@ -1665,7 +1665,7 @@ article h3
     
     .menu .menù-toggle .menù-toggle-content
     {
-        margin: 25px;
+        margin-right: 25px;
         width: 32px;
         height: 5px;
         background-color: transparent;
@@ -1695,6 +1695,11 @@ article h3
         transition: 0.4s ease;
         box-shadow: 0 -10px 0 white;
         border-radius: 10px;
+    }
+
+    .menu.barraaperta .menù-toggle-content
+    {
+        margin-right: 25px;
     }
     
     .menu.barraaperta .menù-toggle .menù-toggle-content::before
