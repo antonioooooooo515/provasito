@@ -70,13 +70,13 @@
             <!--<div class="avatar">
                 <img src="Immagini/AvatarHome.png" alt="">
             </div>-->
-            <div class="typing-box-2 reveal1">
+            <div class="typing-box-2 reveal-repet1">
                 <h1>Ciao,</h1>
                 <div class="h2">
                     <h2>mi chiamo</h2>
                     <h2>Antonio.</h2>
                 </div>
-                <div class="typing reveal2">
+                <div class="typing reveal-repet2">
                     <div class="typing-static-text">Sono uno</div>
                     <ul class="typing-dynamic-text">
                         <li class="primo-type"><span>studente.</span></li>
@@ -86,7 +86,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card reveal-repet3">
             <div class="card-front">
                 <img src="Immagini/AvatarHome.png">
             </div>
@@ -140,7 +140,7 @@
                     <h3>Imparerai al meglio questi linguaggi.</h3>
                 </div>
             </div>
-            <div class="box-icon-box reveal1">
+            <div class="box-icon-box reveal2">
                 <div class="box-icon-icon" style="--box-icon-color: #fd6494;">
                     <i class='bx bxl-visual-studio icon-box'></i>
                 </div>
@@ -167,7 +167,7 @@
                     <h2 style="--box-icon-color: #ffb508;">Prova</h2>
                 </div>
             </div>-->
-            <div class="box-icon-box reveal1">
+            <div class="box-icon-box reveal3">
                 <div class="box-icon-icon" style="--box-icon-color: #37ba82;">
                     <i class='bx bxl-codepen icon-box'></i>
                 </div>
@@ -177,7 +177,7 @@
                     <button style="--box-icon-color: #37ba82;"><a href="https://codepen.io/pen/" target="_bank">Vai al sito!</a></button>
                 </div>
             </div>
-            <div class="box-icon-box reveal1">
+            <div class="box-icon-box reveal4">
                 <div class="box-icon-icon" style="--box-icon-color: #cd57ff;">
                     <i class='bx bx-code icon-box'></i>
                 </div>
@@ -284,9 +284,13 @@
             duration: 800,
         });
 
+        ScrollReveal().reveal('.reveal-repet1', {reset:true, delay: 400});
+        ScrollReveal().reveal('.reveal-repet2', {reset:true, delay: 600});
+        ScrollReveal().reveal('.reveal-repet3', {reset:true, delay: 800});
         ScrollReveal().reveal('.reveal1', {delay: 400});
         ScrollReveal().reveal('.reveal2', {delay: 600});
         ScrollReveal().reveal('.reveal3', {delay: 800});
+        ScrollReveal().reveal('.reveal4', {delay: 1000});
     </script>
 
 </body>
