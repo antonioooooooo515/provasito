@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
+<body id="body">
     <header>
         <a href="index.html"><img class="logo" src="Immagini/Logo.png" width="125px"></a>
         <div class="menu">
@@ -102,8 +102,8 @@
         </div>
     </div>
     
-    <div class="home-argoments" style="margin-bottom: 200px;">
-        <div class="html-information" data-aos="fade-up">
+    <div class="home-argoments" style="margin-bottom: 200px; margin-top: 170px;">
+        <div class="html-information" data-aos="fade-down" data-aos-delay="500">
             <h1>Html</h1>
             <h2>
                 L’HTML è un linguaggio per la scrittura di documenti ipertestuali che è stato studiato per essere utilizzato all’interno del WWW (World Wide Web). È basato sia sul protocollo per la trasmissione di documenti (HTTP), che sulla notazione perl’indirizzamento delle risorse (URL). Le pagine di un sito (costituite da documenti HTML) sono memorizzate su un server Web e vengono visualizzate dal browser del computer client attraverso l’utilizzo di un browser Web, come per esempio Chrome, Firefox, Opera, Safari e Internet Explorer. Quando l’utente digita l’indirizzo Web (URL) della pagina che vuole visitare, il sistema operativo richiede, attraverso una connessione HTTP, la pagina al server in cui è memorizzata e la scarica affinché possa essere visualizzata dal browser. Quando il server non trova la pagina, per errore di digitazione oppure per altri motivi, restituisce il codice di errore 404.
@@ -219,6 +219,7 @@
                 antonioserrano515@gmail.com
             </h1>
         </div>
+        
 
         <div class="form">
             <form action="https://getform.io/f/aa0fa146-edad-4afe-925e-fd4cd85011f7" enctype="multipart/form-data" method="POST" target="_blank">
@@ -256,6 +257,7 @@
     <script>
         const menùtoggle = document.querySelector('.menù-toggle');
         const menu = document.querySelector('.menu');
+
         
         menùtoggle.onclick = function()
         {
@@ -268,6 +270,7 @@
     AOS.init
     (
         {
+            offset: 0,
             delay: 400,
         }
     );

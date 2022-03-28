@@ -2035,8 +2035,8 @@ article h3
     header
     {
         position: fixed;
+        top: 0;
     }
-
 }
 
 
