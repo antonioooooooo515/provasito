@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="icon" href="Immagini/Prova Favicon.png">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body id="body">
     <header>
@@ -69,13 +70,13 @@
             <!--<div class="avatar">
                 <img src="Immagini/AvatarHome.png" alt="">
             </div>-->
-            <div class="typing-box-2">
+            <div class="typing-box-2 reveal1">
                 <h1>Ciao,</h1>
                 <div class="h2">
                     <h2>mi chiamo</h2>
                     <h2>Antonio.</h2>
                 </div>
-                <div class="typing">
+                <div class="typing reveal2">
                     <div class="typing-static-text">Sono uno</div>
                     <ul class="typing-dynamic-text">
                         <li class="primo-type"><span>studente.</span></li>
@@ -103,21 +104,21 @@
     </div>
     
     <div class="home-argoments" style="margin-bottom: 200px; margin-top: 170px;">
-        <div class="html-information" data-aos="fade-down" data-aos-delay="500">
+        <div class="html-information reveal1">
             <h1>Html</h1>
             <h2>
                 L’HTML è un linguaggio per la scrittura di documenti ipertestuali che è stato studiato per essere utilizzato all’interno del WWW (World Wide Web). È basato sia sul protocollo per la trasmissione di documenti (HTTP), che sulla notazione perl’indirizzamento delle risorse (URL). Le pagine di un sito (costituite da documenti HTML) sono memorizzate su un server Web e vengono visualizzate dal browser del computer client attraverso l’utilizzo di un browser Web, come per esempio Chrome, Firefox, Opera, Safari e Internet Explorer. Quando l’utente digita l’indirizzo Web (URL) della pagina che vuole visitare, il sistema operativo richiede, attraverso una connessione HTTP, la pagina al server in cui è memorizzata e la scarica affinché possa essere visualizzata dal browser. Quando il server non trova la pagina, per errore di digitazione oppure per altri motivi, restituisce il codice di errore 404.
             </h2>
         </div>
         
-        <div class="css-information" data-aos="fade-down" data-aos-delay="500">
+        <div class="css-information reveal2">
             <h1>Css</h1>
             <h2>
                 Le pagine Web scritte in HTML non consentono di definire un layout adeguato, in quanto i vari elementi di cui è formato un documento (intestazione, barra di navigazione, piè pagina ecc.) possono essere collocati soltanto attraverso le tabelle. Grazie ai fogli di stile, invece, possiamo costruire il contenuto e successivamente applicarvi lo stile desiderato semplicemente variando la pagina dello stile.
             </h2>
         </div>
         
-        <div class="javascript-information" data-aos="fade-down" data-aos-delay="700">
+        <div class="javascript-information reveal3">
             <div class="javascript-information-content">
                 <h1>Java</h1>
                 <h1>Script</h1>
@@ -130,7 +131,7 @@
 
     <div class="box-home">
         <div class="box-icon">
-            <div class="box-icon-box" data-aos="flip-up">
+            <div class="box-icon-box reveal1">
                 <div class="box-icon-icon" style="--box-icon-color: #4eb7ff;">
                     <i class='bx bxl-html5 icon-box'></i>
                 </div>
@@ -139,7 +140,7 @@
                     <h3>Imparerai al meglio questi linguaggi.</h3>
                 </div>
             </div>
-            <div class="box-icon-box" data-aos="flip-down">
+            <div class="box-icon-box reveal1">
                 <div class="box-icon-icon" style="--box-icon-color: #fd6494;">
                     <i class='bx bxl-visual-studio icon-box'></i>
                 </div>
@@ -166,7 +167,7 @@
                     <h2 style="--box-icon-color: #ffb508;">Prova</h2>
                 </div>
             </div>-->
-            <div class="box-icon-box" data-aos="flip-up">
+            <div class="box-icon-box reveal1">
                 <div class="box-icon-icon" style="--box-icon-color: #37ba82;">
                     <i class='bx bxl-codepen icon-box'></i>
                 </div>
@@ -176,7 +177,7 @@
                     <button style="--box-icon-color: #37ba82;"><a href="https://codepen.io/pen/" target="_bank">Vai al sito!</a></button>
                 </div>
             </div>
-            <div class="box-icon-box" data-aos="flip-down">
+            <div class="box-icon-box reveal1">
                 <div class="box-icon-icon" style="--box-icon-color: #cd57ff;">
                     <i class='bx bx-code icon-box'></i>
                 </div>
@@ -195,7 +196,7 @@
 
     <br><br>
     
-    <div class="contact">
+    <div class="contact reveal1">
         <div class="contact-content">
             <h1>
                 Contattami
@@ -207,7 +208,7 @@
     </div>
         
     <div class="contact-information">
-        <div class="information">
+        <div class="information reveal2">
             <i class='bx bxs-user icona-user'></i> <span>Me</span>
             <h1>
                 Antonio Serranò
@@ -221,7 +222,7 @@
         </div>
         
 
-        <div class="form">
+        <div class="form reveal3">
             <form action="https://getform.io/f/aa0fa146-edad-4afe-925e-fd4cd85011f7" enctype="multipart/form-data" method="POST" target="_blank">
                 <div class="form-section">
                     <input type="text" name="name" required placeholder="Full name..."/>
@@ -233,7 +234,7 @@
                     <textarea rows="5" placeholder="Your text..."></textarea>
                     <input class="textarea" type="tex" name="text" required placeholder="Your text..."/>
                 </div>
-                <button type="submit"> Invia </button>
+                <button type="submit""> Invia </button>
             </form>
         </div>
     </div>
@@ -265,7 +266,7 @@
         }
     </script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init
     (
@@ -274,6 +275,18 @@
             delay: 400,
         }
     );
+    </script> -->
+
+    <script>
+        ScrollReveal({ 
+            reset: false,
+            distance: '50px',
+            duration: 800,
+        });
+
+        ScrollReveal().reveal('.reveal1', {delay: 400});
+        ScrollReveal().reveal('.reveal2', {delay: 600});
+        ScrollReveal().reveal('.reveal3', {delay: 800});
     </script>
 
 </body>
