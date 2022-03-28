@@ -2034,7 +2034,7 @@ article h3
 
     header
     {
-        position: fixed;
+        position: -webkit-sticky;
         top: 0;
     }
 }
