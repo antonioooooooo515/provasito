@@ -19,7 +19,7 @@
 <body id="body">
     <header>
         <a href="index.html"><img class="logo" src="Immagini/Logo.png" width="125px"></a>
-        <div class="menu">
+        <div class="menu" id="menu">
             <div class="menù-toggle">
                 <div class="menù-toggle-content"></div>
             </div>
@@ -253,29 +253,7 @@
 
     
 
-    
-
-    <script>
-        const menùtoggle = document.querySelector('.menù-toggle');
-        const menu = document.querySelector('.menu');
-
-        
-        menùtoggle.onclick = function()
-        {
-            menu.classList.toggle('barraaperta');
-        }
-    </script>
-
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init
-    (
-        {
-            offset: 0,
-            delay: 400,
-        }
-    );
-    </script> -->
+    <script src="noscroll.js"></script>
 
     <script>
         ScrollReveal({ 
