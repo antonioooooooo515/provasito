@@ -4,6 +4,6 @@ const body = document.getElementsByTagName("body")[0];
         
 menùtoggle.onclick = function()
 { 
-    menu.classList.toggle('barraaperta');
     body.classList.toggle('noscroll');
+    menu.classList.toggle('barraaperta');
 }

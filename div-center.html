@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS | Center Div</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="Immagini/Prova Favicon.png">
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body id="body">
+    <header>
+        <a href="index.html"><img class="logo" src="Immagini/Logo.png" width="125px"></a>
+        <div class="menu" id="menu">
+            <div class="menù-toggle">
+                <div class="menù-toggle-content"></div>
+            </div>
+            
+            <ul>
+                <li><a class="animate__animated animate__wobble pulsantehome" href="index.html"><i class='bx bxs-home homebutton'></i></a></li>
+                <li><a class="animate__animated animate__wobble html" href="HTML/htmlgenerale.html">HTML</a></li>
+                <li><a class="animate__animated animate__wobble css" href="CSS/cssgenerale.html">CSS</a></li>
+                <li><a class="animate__animated animate__wobble javascript" href="">JAVASCRIPT</a></li>
+            </ul>
+        </div>
+        <a href="https://www.instagram.com/_antonioserrano_/?hl=en" target="_blank"><img class="insta" src="Immagini/Instagram-icon.png" width="70px"></a>
+    </header>
+
+    <div class="first-divcenter">
+        <div class="first-divcenter-content1 reveal1">Vorresti centrare un <span style="color: #E34672;">div</span> ma non sai come?</div>
+        <div class="first-divcenter-content2 reveal2">Imparalo ora!</div>
+        <div class="freccia reveal3"><i class='bx bx-chevron-down bx-fade-up'></i></div>
+    </div>
+
+
+    <div class="first-metod">
+        <div class="left-first reveal1">
+            <h1 class="titoltc txc">Primo metodo</h1>
+            <h2 class="txc">Text-align: center</h2>
+        </div>
+
+        <div class="center-first reveal2">
+            <div class="outer-box-first">
+                <p class="txc-medium inner-box-first">Centrami!</p>
+            </div>
+        </div>
+
+
+        <div class="right-first reveal3">
+            <p class="txc-small"> 
+                <span class="first-span-center">.outer-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">width</span>:<span class="first-span-center"> 200px</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">height</span>:<span class="first-span-center"> 200px</span>;
+                    <br>
+                }
+                <br>
+                <br>
+
+                <span class="first-span-center">p.inner-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">text-align</span>:<span class="first-span-center"> center</span>
+                    <br> &emsp;
+                    <span class="second-span-center">line-height</span>:<span class="first-span-center"> 200px</span>;
+                    <br>
+                }
+                <br>
+                <br>
+            </p>
+
+            <button><a href="https://codepen.io/Antonio_Serrano/pen/vYppWaj" target="_blank">Prova tu!</a></button>
+        </div>
+    </div>
+
+    <div class="second-metod">
+        <div class="left-first reveal1">
+            <h1 class="titoltc txc">Secondo metodo</h1>
+            <h2 class="txc">Dispaly: table</h2>
+        </div>
+
+        <div class="center-second reveal2">
+            <div class="outer-box-second">
+                <p class="txc-medium inner-box-second">Centrami!</p>
+            </div>
+        </div>
+
+
+        <div class="right-second reveal3">
+            <p class="txc-small"> 
+                <span class="first-span-center">.outer-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">display</span>:<span class="first-span-center"> table</span>;
+                    <br>
+                }
+                <br>
+                <br>
+
+                <span class="first-span-center">p.inner-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">display</span>:<span class="first-span-center"> table-cell</span>
+                    <br> &emsp;
+                    <span class="second-span-center">vertical-align</span>:<span class="first-span-center"> middle</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">text-align</span>:<span class="first-span-center"> center</span>;
+                    <br>
+                }
+                <br>
+                <br>
+            </p>
+
+            <button><a href="https://codepen.io/Antonio_Serrano/pen/xxppPjq" target="_blank">Prova tu!</a></button>
+        </div>
+    </div>
+
+    <div class="third-metod">
+        <div class="left-third reveal1">
+            <h1 class="titoltc txc">Terzo metodo</h1>
+            <h2 class="txc">Position: absolute v1</h2>
+        </div>
+
+        <div class="center-third reveal2">
+            <div class="outer-box-third">
+                <div class="txc-medium inner-box-third">Centrami!</div>
+            </div>
+        </div>
+
+
+        <div class="right-third reveal3">
+            <div class="txc-small"> 
+                <span class="first-span-center">.outer-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">position</span>:<span class="first-span-center"> relative</span>;
+                    <br>
+                }
+                <br>
+                <br>
+
+                <span class="first-span-center">div.inner-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">postion</span>:<span class="first-span-center"> absolute</span>
+                    <br> &emsp;
+                    <span class="second-span-center">top</span>:<span class="first-span-center"> 50%</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">left</span>:<span class="first-span-center"> 50%</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">transform</span>:<span class="first-span-center"> translate(-50%,-50%)</span>;
+                    <br>
+                }
+                <br>
+                <br>
+            </div>
+
+            <button><a href="https://codepen.io/Antonio_Serrano/pen/qBppVpm" target="_blank">Prova tu!</a></button>
+        </div>
+    </div>
+
+    <div class="fourth-metod">
+        <div class="left-fourth reveal1">
+            <h1 class="titoltc txc">Quarto metodo</h1>
+            <h2 class="txc">Position: absolute v2</h2>
+        </div>
+
+        <div class="center-fourth reveal2">
+            <div class="outer-box-fourth">
+                <div class="txc-medium inner-box-fourth">Centrami!</div>
+            </div>
+        </div>
+
+
+        <div class="right-fourth reveal3">
+            <div class="txc-small"> 
+                <span class="first-span-center">.outer-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">position</span>:<span class="first-span-center"> relative</span>;
+                    <br>
+                }
+                <br>
+                <br>
+
+                <span class="first-span-center">div.inner-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">postion</span>:<span class="first-span-center"> absolute</span>
+                    <br> &emsp;
+                    <span class="second-span-center">inset</span>:<span class="first-span-center"> 0</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">margin</span>:<span class="first-span-center"> auto</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">width</span>:<span class="first-span-center"> fit-content</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">height</span>:<span class="first-span-center"> fit-content</span>;
+                    <br>
+                }
+                <br>
+                <br>
+            </div>
+
+            <button><a href="https://codepen.io/Antonio_Serrano/pen/KKZZyvj" target="_blank">Prova tu!</a></button>
+        </div>
+    </div>
+
+    <div class="fifth-metod" style="margin-bottom: 80px;">
+        <div class="left-fifth reveal1">
+            <h1 class="titoltc txc">Quinto metodo</h1>
+            <h2 class="txc">Margin: 0 auto</h2>
+        </div>
+
+        <div class="center-fifth reveal2">
+            <div class="outer-box-fifth" style="margin-top: 50px; margin-bottom: 50px;">
+                <div class="txc-medium inner-box-fifth">Centrami!</div>
+            </div>
+        </div>
+
+
+        <div class="right-fifth reveal3">
+            <div class="txc-small"> 
+                <span class="first-span-center">.outer-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">width</span>:<span class="first-span-center"> 200px</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">padding</span>:<span class="first-span-center"> 100px 0</span>;
+                    <br>
+                }
+                <br>
+                <br>
+
+                <span class="first-span-center">div.inner-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">margin</span>:<span class="first-span-center"> 0 auto</span>
+                    <br> &emsp;
+                    <span class="second-span-center">width</span>:<span class="first-span-center"> fit-content</span>;
+                    <br>
+                }
+                <br>
+                <br>
+            </div>
+
+            <button><a href="https://codepen.io/Antonio_Serrano/pen/XWVVzgX" target="_blank">Prova tu!</a></button>
+        </div>
+    </div>
+
+    <div class="sixth-metod">
+        <div class="left-sixth reveal1">
+            <h1 class="titoltc txc">Sesto metodo</h1>
+            <h2 class="txc">Display: flex</h2>
+        </div>
+
+        <div class="center-sixth reveal2">
+            <div class="outer-box-sixth">
+                <div class="txc-medium inner-box-sixth">Centrami!</div>
+            </div>
+        </div>
+
+
+        <div class="right-sixth reveal3">
+            <div class="txc-small"> 
+                <span class="first-span-center">.outer-box</span>
+                <br>
+                {
+                    <br> &emsp;
+                    <span class="second-span-center">display</span>:<span class="first-span-center"> flex</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">align-items</span>:<span class="first-span-center"> center</span>;
+                    <br> &emsp;
+                    <span class="second-span-center">justify-content</span>:<span class="first-span-center"> center</span>;
+                    <br>
+                }
+                <br>
+                <br>
+
+            </div>
+
+            <button><a href="https://codepen.io/Antonio_Serrano/pen/KKZZyMY" target="_blank">Prova tu!</a></button>
+        </div>
+    </div>
+
+    
+
+    <!--Footer-->
+    <footer>
+        <p style="background-color: black; color: white;">
+            &copy Copyright 2022 Antonio Serranò | All rights reserved
+        </p>
+
+        <img src="Immagini/Logo.png" width="100px">
+    </footer>
+
+    
+
+    <script src="noscroll.js"></script>
+
+    <script>
+        ScrollReveal({ 
+            reset: false,
+            distance: '50px',
+            duration: 800,
+            mobile: false
+        });
+
+        ScrollReveal().reveal('.reveal-repet1', {reset:true, delay: 400});
+        ScrollReveal().reveal('.reveal-repet2', {reset:true, delay: 600});
+        ScrollReveal().reveal('.reveal-repet3', {reset:true, delay: 800});
+        ScrollReveal().reveal('.reveal1', {delay: 400});
+        ScrollReveal().reveal('.reveal2', {delay: 600});
+        ScrollReveal().reveal('.reveal3', {delay: 800});
+        ScrollReveal().reveal('.reveal4', {delay: 1000});
+    </script>
+
+</body>
+</html>

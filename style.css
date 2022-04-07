@@ -526,6 +526,218 @@ header li
     display: none;
 }
 
+.first-divcenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 90vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.first-divcenter-content1
+{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 50px;
+}
+
+.first-divcenter-content2
+{
+    color: white;
+    font-family: 'SoulMaze';
+    font-size: 80px;
+}
+
+.freccia i
+{
+    font-size: 80px;
+    color: white;
+}
+
+.first-metod, .second-metod, .third-metod, .fourth-metod, .fifth-metod, .sixth-metod
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* .left-first, .center-first, .right-first
+{
+    padding: 50px;
+} */
+
+.outer-box-first
+{
+    background-color: #353535;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.inner-box-first
+{
+    text-align: center;
+    line-height: 200px;
+}
+
+.outer-box-second
+{
+    background-color: #353535;
+    width: 200px;
+    height: 200px;
+    display: table;
+    border-radius: 10px;
+}
+
+.inner-box-second
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.outer-box-third
+{
+    background-color: #353535;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.inner-box-third
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.outer-box-fourth
+{
+    background-color: #353535;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.inner-box-fourth
+{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.outer-box-fifth
+{
+    background-color: #353535;
+    width: 200px;
+    padding: 100px 0;
+    border-radius: 10px;
+}
+
+.inner-box-fifth
+{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.outer-box-sixth
+{
+    background-color: #353535;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+button
+{
+    background-color: #353535;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+button::before
+{
+    background-color: #E34672;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+button:hover::before
+{
+    width: 100%;
+}
+
+.txc
+{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 50px;
+    background-color: transparent;
+}
+
+.txc-small
+{
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins';
+    background-color: transparent;
+}
+
+.txc-medium
+{
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins';
+    background-color: transparent;
+}
+
+.first-span-center
+{
+    color: #a5ff90;
+}
+
+.second-span-center
+{
+    color: #9effff;
+}
+
+.titoltc
+{
+    color: #ED4D6E;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
 
 header li a 
 {
@@ -1869,6 +2081,11 @@ article h3
         flex-direction: column;
     }
 
+    .typing .typing-static-text, .typing-dynamic-text span
+    {
+        font-size: 45px;
+    }
+
     @media (max-width: 600px)
     {
         .h2
@@ -1898,8 +2115,7 @@ article h3
         font-size: 18px;
         margin: 0;
         padding: 20px;
-        width: 80%;
-        
+        width: 80%; 
     }
 
     .html-information h1, .css-information h1, .javascript-information-content h1
@@ -2065,24 +2281,42 @@ article h3
 
     header
     {
-        position: -webkit-sticky;
+        position: fixed;
         top: 0;
     }
+
+    .first-divcenter-content1
+    {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .center-first, .center-second, .center-third, .center-fourth, .center-fifht, .center-sixth
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .freccia
+    {
+        margin-top: 20px;
+    }
+
+    .first-divcenter-content2
+    {
+        font-size: 60px;
+    }
+
+    .first-metod, .second-metod, .third-metod, .fourth-metod, .fifth-metod, .sixth-metod
+    {
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw;
+        margin: 0 auto;
+        height: 100vh;
+        margin-bottom: 200px;
+    }
 }
-
-
-.transition-fade {
-    transition: 0.4s;
-    opacity: 1;
-  }
-  
-  html.is-animating .transition-fade {
-    opacity: 0;
-  }
-
-
-
-
 
 
 @media (max-width: 1500px) and (min-width: 1081px)
