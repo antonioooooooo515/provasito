@@ -201,6 +201,8 @@ body
     transition: 0.5s ease;
     border-radius: 10px;
     background: transparent;
+    position: relative;
+    z-index: 1;
 }
 
 .card-front, .card-back
@@ -220,6 +222,18 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card svg
+{
+    position: absolute;
+    left: 0;
+    width: 300%;
+    height: 150%;
+    z-index: -2;
+    transform: translateX(-25%) translateY(-15%);
+    pointer-events: none;
+    background-color: transparent;
 }
 
 .card-front img, .card-back h1
@@ -2278,7 +2292,6 @@ article h3
         transform-origin: left;
     }
 
-    
     .a-s
     {
         border-bottom: 2px solid #E34672;
@@ -2337,11 +2350,32 @@ article h3
     {
         text-align: center;
     }
+
+    .card
+    {
+        margin-top: 30px;
+    }
+
+    .information
+    {
+        text-align: center;
+    }
+
+    body
+    {
+        overflow-x: hidden;
+    }
+
 }
 
 
 @media (max-width: 1500px) and (min-width: 1081px)
 {
+    body
+    {
+        overflow-x: hidden;
+    }
+
     section
     {
         display: flex;
