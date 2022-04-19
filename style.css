@@ -2366,6 +2366,11 @@ article h3
         overflow-x: hidden;
     }
 
+    .card
+    {
+        overflow: hidden;
+    }
+
 }
 
 
