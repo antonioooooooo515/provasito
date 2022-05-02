@@ -549,6 +549,7 @@ header li
     width: 90vw;
     margin: 0 auto;
     height: 100vh;
+    text-align: center;
 }
 
 .first-divcenter-content1
@@ -1127,8 +1128,12 @@ nav
     margin: 0;
     padding: 0;
     position: fixed;
-
 }
+
+/* span
+{
+    background-color: white;
+} */
   
 article 
 {
@@ -1142,6 +1147,7 @@ article
     padding-bottom: 40px;
     border-radius: 10px;
     position: relative;
+    margin-bottom: 100px;
 }
 
 article p, article div
@@ -1789,6 +1795,52 @@ article h3
     color: #E34672;
 }
 
+/*========================Bootstrap=====================*/
+
+.bootstrap
+{
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.bootstrap p
+{
+    font-size: 30px;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.bootstrap button
+{
+    transition: 0.5s ease;
+}
+
+.bootstrap button:hover
+{
+    background-color: #E34672;
+}
+
+.bootstrap .navbar-nav a
+{
+    font-size: 25px;
+}
+
+.bootstrap .navbar-brand a
+{
+    font-size: 40px;
+}
+
+.bootstrap-navbar
+{
+    width: 100vw;
+}
+
+
+
+
+
 /*==================Altri elementi pagina==================*/
 
 /*Selectiom*/
@@ -1823,6 +1875,50 @@ article h3
     display: none;
 }
 
+.esempiojavascript
+{
+    border-radius: 10px;
+    color: white;
+    word-break: break-all;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.esempiojavascript span
+{
+    background-color: transparent;
+}
+
+.esempiojavascript p
+{
+    background-color: transparent;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.tabellaoperatori
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    font-family: 'Poppins';
+}
+
+.tabellaoperatori, .tabellaoperatori tr, .tabellaoperatori th, .tabellaoperatori td
+{
+    background-color: white;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.tabellaoperatori th
+{
+    margin-inline: 10px;
+}
 
 /*==================Responsive==================*/
 @media (max-width: 1080px)
@@ -2401,7 +2497,6 @@ article h3
         display: none;
     }
 
-
     nav
     {
         display: none;
@@ -2426,6 +2521,7 @@ article h3
         margin-bottom: 20px;
         margin-top: 150px;
         width: 95%;
+        text-align: center;
     }
 
     .second-menu ul
@@ -2535,6 +2631,18 @@ article h3
     {
         font-size: 15px;
         padding: 19px 22px;
+    }
+
+
+    .first-divcenter-content1
+    {
+        margin-top: 50px;
+        font-size: 35px;
+    }
+
+    .first-divcenter-content2
+    {
+        font-size: 65px;
     }
 
     

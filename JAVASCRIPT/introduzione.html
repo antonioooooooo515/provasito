@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS | JAVASCRIPT/Introduzione</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a>
+        <div class="menu">
+            <div class="menù-toggle">
+                <div class="menù-toggle-content"></div>
+            </div>
+
+            <ul>
+                <li><a href="../index.html"><i class='bx bxs-home homebutton'></i></a></li>
+                <li><a href="../HTML/htmlgenerale.html" class="a-s">HTML</a></li>
+                <li><a href="../CSS/cssgenerale.html">CSS</a></li>
+                <li><a href="javascriptgenerale.html">JAVASCRIPT</a></li>
+            </ul>
+
+            <div class="menu-separetion">
+                <div class="menu-separetion-content"></div>
+            </div>
+
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="javascriptgenerale.html">Generale</a></li>
+                    <li><a href="introduzione.html">Introduzione</a></li>
+                    <li><a href="variabili.html">Variabili</a></li>
+                    <li><a href="operatori.html">Operatori</a></li>
+                    <li><a href="funzioni.html">Funzioni</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://www.instagram.com/_antonioserrano_/?hl=en" target="_blank"><img class="insta"
+                src="../Immagini/Instagram-icon.png" width="70px"></a>
+    </header>
+
+    <div class="second-menu">
+        <ul>
+            <li><a href="javascriptgenerale.html">Generale</a></li>
+            <li><a href="introduzione.html">Introduzione</a></li>
+            <li><a href="variabili.html">Variabili</a></li>
+            <li><a href="operatori.html">Operatori</a></li>
+            <li><a href="funzioni.html">Funzioni</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a class="first-lateralbar" href="javascriptgenerale.html">Generale</a></li>
+                <li><a href="introduzione.html">Introduzione</a></li>
+                <li><a href="variabili.html">Variabili</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="funzioni.html">Funzioni</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 class="titolo">Introduzione</h1>
+            <br>
+
+            <p>
+                Uno dei metodi JAVASCRIPT principali è <span style="background-color: white; color: #E37;">getElementById()</span>. Esso fa in modo che ogni elemento con un determinato ID si comporti in un modo specifico. Esempi:
+            </p>
+
+            <br><br><br><br>
+
+            <p id="parcontent">Javascript può cambiare il contenuto di un paragrafo.</p>
+            <button type="button" onclick='document.getElementById("parcontent").innerHTML = "Hello JavaScript!"' style="color: white;">Click Me!</button>
+
+            <br><br><br>
+
+            <p id="parsize">JavaScript può cambiare lo stile di un elemento HTML, come per esempio la sua dimensione.</p>
+            <button type="button" onclick="document.getElementById('parsize').style.fontSize='30px'" style="color: white;">Click Me!</button>
+
+
+            <br><br><br>
+            <p>JavaScript può mostrare elementi nascosti.</p>
+            <p id="parhidden" style="display:none">Hello JavaScript!</p>
+            <button type="button" onclick="document.getElementById('parhidden').style.display='block'" style="color: white;">Click Me!</button>
+
+            <br><br><br><br>
+
+            <p>In HTML, il codice JavaScript viene inserito tra i tag <span style="background-color: white; color: #E37;">&#60script></span> e <span style="background-color: white; color: #E37;">&#60/script></span>. Esempio:</p>
+            <br><br>
+
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                &emsp; <span class="first-span-center">&#60script></span>
+                <br>
+                &emsp; {
+                <br>
+                <p style="width: 85%;"><span class="first-span-center">document.getElementById(<span class="second-span-center">"prova"</span>).innerHTML = <span class="second-span-center">"My first Javascript!"</span>;</span></p>
+                &emsp; }
+                <br>
+                <br>
+            </div>
+
+            
+            <p style="margin-bottom: 20px;">È possibile inserire un numero qualsiasi di script in un documento HTML. Possono essere inseriti nel tag &#60head>, nel tag &#60body> o in entrambi.</p>
+
+            <h1 class="titolo">JavaScript in &#60head></h1>
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                &emsp; &#60head>
+                <br>
+                &emsp; &emsp; <span class="first-span-center">&#60script></span>
+                <br>
+                &emsp; &emsp; {
+                <br>
+                <p style="width: 85%;"><span class="first-span-center">document.getElementById(<span class="second-span-center">"prova"</span>).innerHTML = <span class="second-span-center">"My first Javascript!"</span>;</span></p>
+                &emsp; &emsp; }
+                <br>
+                &emsp; &emsp; <span class="first-span-center">&#60/script></span>
+                <br>
+                &emsp; &#60/head>
+                <br>
+                <br>
+            </div>
+
+            <h1 class="titolo">JavaScript in &#60body></h1>
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                &emsp; &#60body>
+                <br>
+
+                &emsp; &emsp; <span class="first-span-center">&#60script></span>
+                <br>
+                &emsp; &emsp; {
+                <br> 
+                <p style="width: 85%;"><span class="first-span-center">document.getElementById(<span class="second-span-center">"prova"</span>).innerHTML = <span class="second-span-center">"My first Javascript!"</span>;</span></p>
+                &emsp; &emsp; }
+                <br>
+                &emsp; &emsp; <span class="first-span-center">&#60/script></span>
+                <br>
+                &emsp; &#60/body>
+                <br>
+                <br>
+            </div>
+
+            <h1 class="titolo">JavaScript esterno</h1>
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                <p  style="width: 95%;">
+                    &emsp;<span class="first-span-center">&#60script src=<span class="second-span-center">"myScript.js"</span>></span>
+                    <span class="first-span-center">&#60/script></span>
+                </p>
+                <br>
+            </div>
+
+        </article>
+
+        <aside>
+
+        </aside>
+    </section>
+
+
+    <!--Footer-->
+    <footer>
+        <p style="background-color: black; color: white;">
+            &copy Copyright 2022 Antonio Serranò | All rights reserved
+        </p>
+
+        <img src="../Immagini/Logo.png" width="100px">
+    </footer>
+
+
+    <script src="../noscroll.js"></script>
+
+</body>
+
+</html>

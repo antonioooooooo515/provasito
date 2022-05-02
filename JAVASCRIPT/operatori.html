@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS | JAVASCRIPT/Operatori</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a>
+        <div class="menu">
+            <div class="menù-toggle">
+                <div class="menù-toggle-content"></div>
+            </div>
+
+            <ul>
+                <li><a href="../index.html"><i class='bx bxs-home homebutton'></i></a></li>
+                <li><a href="../HTML/htmlgenerale.html" class="a-s">HTML</a></li>
+                <li><a href="../CSS/cssgenerale.html">CSS</a></li>
+                <li><a href="javascriptgenerale.html">JAVASCRIPT</a></li>
+            </ul>
+
+            <div class="menu-separetion">
+                <div class="menu-separetion-content"></div>
+            </div>
+
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="javascriptgenerale.html">Generale</a></li>
+                    <li><a href="introduzione.html">Introduzione</a></li>
+                    <li><a href="variabili.html">Variabili</a></li>
+                    <li><a href="operatori.html">Operatori</a></li>
+                    <li><a href="funzioni.html">Funzioni</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://www.instagram.com/_antonioserrano_/?hl=en" target="_blank"><img class="insta"
+                src="../Immagini/Instagram-icon.png" width="70px"></a>
+    </header>
+
+    <div class="second-menu">
+        <ul>
+            <li><a href="javascriptgenerale.html">Generale</a></li>
+            <li><a href="introduzione.html">Introduzione</a></li>
+            <li><a href="variabili.html">Variabili</a></li>
+            <li><a href="operatori.html">Operatori</a></li>
+            <li><a href="funzioni.html">Funzioni</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a class="first-lateralbar" href="javascriptgenerale.html">Generale</a></li>
+                <li><a href="introduzione.html">Introduzione</a></li>
+                <li><a href="variabili.html">Variabili</a></li>
+                <li><a href="operatori.html">Operatori</a></li>
+                <li><a href="funzioni.html">Funzioni</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 class="titolo">Operatori</h1>
+            <br>
+
+            <h2 style="background-color: white; color: #E37;">Operatori aritmetici</h2>
+
+            <p>
+                Gli <span style="background-color: white; color: #E37;">operatori aritmetici</span> vengono utilizzati
+                per eseguire operazioni aritmetiche sui numeri:
+            </p>
+
+            <table class="tabellaoperatori">
+                <tr>
+                    <th>Operatore</th>
+                    <th>Descrizione</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Addizione</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Sottrazione</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Moltiplicazione</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Esponenziale</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Divisione</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Modulo</td>
+                </tr>
+                <tr>
+                    <td>++</td>
+                    <td>Incremento</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>--</td>
+                    <td>Decremento</td>
+                </tr>
+            </table>
+
+            <h2 style="background-color: white; color: #E37;">Operatori di assegnazione</h2>
+
+            <p>
+                Gli <span style="background-color: white; color: #E37;">operatori di assegnazione</span> vengono
+                utilizzati per assegnare valori alle variabili:
+            </p>
+
+            <table class="tabellaoperatori">
+                <tr>
+                    <th>Operatore</th>
+                    <th>Esempio</th>
+                    <th>Corrispondente</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>x = y</td>
+                    <td>x = y</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>x += y</td>
+                    <td>x = x + y</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>x -= y</td>
+                    <td>x = x - y</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>x *= y</td>
+                    <td>x = x * y</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>x /= y</td>
+                    <td>x = x / y</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>%=</td>
+                    <td>x %= y</td>
+                    <td>x = x % y</td>
+                </tr>
+            </table>
+
+            <h2 style="background-color: white; color: #E37;">Operatori di confronto</h2>
+
+            <p>
+                Gli <span style="background-color: white; color: #E37;">operatori di assegnazione</span> vengono
+                utilizzati per assegnare valori alle variabili:
+            </p>
+
+            <table class="tabellaoperatori">
+                <tr>
+                    <th>Operatore</th>
+                    <th>Descrizione</th>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Uguale a</td>
+                </tr>
+                <tr>
+                    <td>===</td>
+                    <td>Uguale valore e tipo</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Diverso</td>
+                </tr>
+                <tr>
+                    <td>!==</td>
+                    <td>Diverso valore e tipo</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Maggiore di</td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Minore di</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Maggiore o uguale di</td>
+                </tr>
+                <tr>
+                    <td><=</td>
+                    <td>Minore o uguale di</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>?</td>
+                    <td>Operatore ternario</td>
+                </tr>
+            </table>
+
+            <h2 style="background-color: white; color: #E37;">Operatori logici</h2>
+
+            <table class="tabellaoperatori">
+                <tr>
+                    <th>Operatore</th>
+                    <th>Descrizione</th>
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>And logico</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Or logico</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>!</td>
+                    <td>Not logico</td>
+                </tr>
+            </table>
+
+            <h2 style="background-color: white; color: #E37;">Operatori di tipo</h2>
+
+            <table class="tabellaoperatori">
+                <tr>
+                    <th>Operatore</th>
+                    <th>Descrizione</th>
+                </tr>
+                <tr>
+                    <td>typeof</td>
+                    <td>Ritorna il tipo della variabile</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>instanceof</td>
+                    <td>Ritorna vero se un oggetto è un'istanza di un tipo di un oggetto</td>
+                </tr>
+            </table>
+
+        </article>
+
+        <aside>
+
+        </aside>
+    </section>
+
+
+    <!--Footer-->
+    <footer>
+        <p style="background-color: black; color: white;">
+            &copy Copyright 2022 Antonio Serranò | All rights reserved
+        </p>
+
+        <img src="../Immagini/Logo.png" width="100px">
+    </footer>
+
+
+    <script src="../noscroll.js"></script>
+
+</body>
+
+</html>

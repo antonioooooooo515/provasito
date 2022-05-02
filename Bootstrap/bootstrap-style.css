@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body
+{
+    background-color: #24252A;
+}
+
+.icona
+{
+    font-size: 40px;
+    color: white;
+}
+
+.bx-code-alt
+{
+    font-size: 30px;
+    margin-inline: 5px;
+}
+
+.bxl-instagram
+{
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.insta
+{
+    margin-left: auto;
+}
+
+.navbar-nav
+{
+    margin-left: 20px;
+}
+
+.navbar-nav a
+{
+    font-size: 25px;
+}
+
+.navbar-brand
+{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand
+{
+    font-size: 30px;
+}
+
+button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+button a:hover
+{
+    color: white;
+}
+
+.bootstrap-information .ft-20
+{
+    font-size: 20px;
+}
+
+.home-card
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.card-body h1
+{
+    font-weight: bold;
+}
+
+.card-body p
+{
+    font-size: 20px;
+}
+
+.bootstrap-information
+{
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.bootstrap-img
+{
+    background-color: #553d7b;
+    border-radius: 20px;
+}
+
+
+.bootstrap-img img
+{
+    width: 800px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.bootstrap-information h3
+{
+    margin-top: 50px;
+    color: white;
+}
+
+.bootstrap-information h2
+{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.margin-top-h2
+{
+    margin-top: 50px;
+}
+
+.bootstrap-information .button
+{
+    background-color: #553d7b;
+    color: white;
+    border: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.me-auto
+{
+    font-size: 20px;
+}
+
+.toast-body
+{
+    font-size: 15px;
+}
+
+.bootstrap-page2
+{
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face 
+{
+    font-family: 'SoulMaze Outlined';
+    src: url('MADESoulmaze.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bootstrap-page2 h1
+{
+    color: white;
+    font-family: 'SoulMaze Outlined';
+    font-size: 80px;
+    text-align: center;
+}
+
+@media (max-width: 1080px)
+{
+    .bootstrap-page2 h1
+    {
+        font-size: 45px;
+    }
+}
+
+
+::-webkit-scrollbar
+{
+    width: 4px;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #553d7b;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1200px)
+{
+    .home-card
+    {
+        flex-direction: column;
+    }
+
+    .card
+    {
+        margin-bottom: 50px;
+    }
+}
+
