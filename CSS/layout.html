@@ -13,17 +13,59 @@
 </head>
 <body>
   <header>
-    <img class="logo" src="../Immagini/Logo.png" width="125px">
-    <div class="menu">
+    <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a> 
+      <div class="menu">
+        <div class="menù-toggle">
+          <div class="menù-toggle-content"></div>
+        </div>
+
         <ul>
-            <li><a href="../index.html"><i class='bx bxs-home homebutton'></i></a></li>
-            <li><a href="../HTML/htmlgenerale.html">HTML</a></li>
-            <li><a href="cssgenerale.html">CSS</a></li>
-            <li><a href="">JavaScript</a></li>
-        </ul>
+          <li><a href="../index.html"><i class='bx bxs-home homebutton'></i></a></li>
+          <li><a href="../HTML/htmlgenerale.html">HTML</a></li>
+          <li><a href="cssgenerale.html" class="a-s">CSS</a></li>
+          <li><a href="../JAVASCRIPT/javascriptgenerale.html">JAVASCRIPT</a></li>
+        </ul>  
+
+        <div class="menu-separetion">
+          <div class="menu-separetion-content"></div>
+        </div>
+
+        <div class="sub-menu">
+          <ul>
+            <li><a href="cssgenerale.html">Generale</a></li>
+            <li><a href="applicazionedeglistili.html">Stili e applicazioni</a></li>
+            <li><a href="stiliinlinea.html">Stili in linea</a></li>
+            <li><a href="stilialivellodidocumenti.html">Stili a livello di documento</a></li>
+            <li><a href="stiliesterni.html">Stili esterni</a></li>
+            <li><a href="stiliincascata.html">Stili in cascata</a></li>
+            <li><a href="regoleperpiùselettori.html">Regole per più selettori</a></li>
+            <li><a href="classi.html">Classi</a></li>
+            <li><a href="classiuniversali.html">Classi universali</a></li>
+            <li><a href="classiregolari.html">Classi regolari</a></li>
+            <li><a href="pseudoclassi.html">Pseudoclassi</a></li>
+            <li><a href="layout.html">Layout</a></li>
+          </ul>
+        </div>
     </div>
     <a href="https://www.instagram.com/_antonioserrano_/?hl=en" target="_blank"><img class="insta" src="../Immagini/Instagram-icon.png" width="70px"></a>
-</header>
+  </header>
+
+  <div class="second-menu">
+    <ul>
+      <li><a href="cssgenerale.html">Generale</a></li>
+      <li><a href="applicazionedeglistili.html">Stili e applicazioni</a></li>
+      <li><a href="stiliinlinea.html">Stili in linea</a></li>
+      <li><a href="stilialivellodidocumenti.html">Stili a livello di documento</a></li>
+      <li><a href="stiliesterni.html">Stili esterni</a></li>
+      <li><a href="stiliincascata.html">Stili in cascata</a></li>
+      <li><a href="regoleperpiùselettori.html">Regole per più selettori</a></li>
+      <li><a href="classi.html">Classi</a></li>
+      <li><a href="classiuniversali.html">Classi universali</a></li>
+      <li><a href="classiregolari.html">Classi regolari</a></li>
+      <li><a href="pseudoclassi.html">Pseudoclassi</a></li>
+      <li><a href="layout.html">Layout</a></li>
+    </ul>
+  </div>
 
     <div class="lateralbar-secondaria">
       <ul>
@@ -127,54 +169,150 @@
         <br>
 
         <div class="box-esempi">
-          <div class="box-esempi-content">
-            <b style="background-color: white;">HTML</b>
-            <br>
-            <br>
-
-            &#60section>
-            <br>
-            &nbsp; &nbsp; &#60nav> Nav &#60/nav>
-            <br>
-            &nbsp; &nbsp; &#60article> Article &#60/article>
-            <br>
-            &nbsp; &nbsp; &#60aside> Aside &#60/aside>
-            <br>
-            &#60/section>
-            <br>
-            &#60footer> Footer &#60/footer>
-          </div>
+          <br>
+          &emsp;<b>HTML</b>
+          <br>
+          <br>   
+          &emsp;<<span class="first-span-center">section</span>>
+          <br>
+          &emsp;&emsp;<<span class="first-span-center">nav</span>> Nav
+          <<span class="first-span-center">/nav</span>>
+          <br>
+          &emsp;&emsp;<<span class="first-span-center">article</span>> Article
+          <<span class="first-span-center">/article</span>>
+          <br>
+          &emsp;&emsp;<<span class="first-span-center">aside</span>> Aside
+          <<span class="first-span-center">/aside</span>>
+          <br>
+          &emsp;<<span class="first-span-center">/section</span>>
+          <br>
+          &emsp;<<span class="first-span-center">footer</span>> Footer
+          <<span class="first-span-center">/footer</span>>
+          <br>
+          <br>
         </div>
-        <br>
-        <br>
 
         <div class="box-esempi">
-          <div class="box-esempi-content">
-            <b style="background-color: white;">CSS</b>
-            <br>
-            <br>
+          <br>
+          &emsp;<b>CSS</b>
+          <br>
+          <br>
+          &emsp;<span class="first-span-center">section</span>{
+          <span class="first-span-center">display</span>:
+          <span class="second-span-center">flex</span>;}
+          <br>
+          <br>
 
-            section{display: flex;}
+          &emsp;<span class="first-span-center">nav</span>
+          <br>&emsp;{
+          <br>
+          <p style="width: 92%;"> 
+            <span class="first-span-center">width</span>:
+            <span class="second-span-center">20%</span>;
             <br>
-            nav {width: 20%; background-color: lightgray; color: black; height: 900px;}
+            <span class="first-span-center">background-color</span>:
+            <span class="second-span-center">lightgrey</span>;
             <br>
-            article {width: 60%; background-color: grey; color: black; height: 900px;}
+            <span class="first-span-center">color</span>:
+            <span class="second-span-center">black</span>;
             <br>
-            aside {width: 20%; background-color: darkgray; color: black; height: 900px;}
+            <span class="first-span-center">height</span>:
+            <span class="second-span-center">900px</span>;
+          </p>
+          &emsp;}
+          <br>
+          <br>
+
+          &emsp;<span class="first-span-center">article</span>
+          <br>&emsp;{
+          <br>
+          <p style="width: 92%;"> 
+            <span class="first-span-center">width</span>:
+            <span class="second-span-center">60%</span>;
             <br>
-            footer {bottom: 0; position: fixed; background-color: black; color: white; width: 100%; height: 100px;}
-          </div>
+            <span class="first-span-center">background-color</span>:
+            <span class="second-span-center">grey</span>;
+            <br>
+            <span class="first-span-center">color</span>:
+            <span class="second-span-center">black</span>;
+            <br>
+            <span class="first-span-center">height</span>:
+            <span class="second-span-center">900px</span>;
+          </p>
+          &emsp;}
+          <br>
+          <br>
+
+          &emsp;<span class="first-span-center">aside</span>
+          <br>&emsp;{
+          <br>
+          <p style="width: 92%;"> 
+            <span class="first-span-center">width</span>:
+            <span class="second-span-center">20%</span>;
+            <br>
+            <span class="first-span-center">background-color</span>:
+            <span class="second-span-center">darkgrey</span>;
+            <br>
+            <span class="first-span-center">color</span>:
+            <span class="second-span-center">black</span>;
+            <br>
+            <span class="first-span-center">height</span>:
+            <span class="second-span-center">900px</span>;
+          </p>
+          &emsp;}
+          <br>
+          <br>
+
+          &emsp;<span class="first-span-center">footer</span>
+          <br>&emsp;{
+          <br>
+          <p style="width: 92%;"> 
+            <span class="first-span-center">position</span>:
+            <span class="second-span-center">fixed</span>;
+            <br>
+            <span class="first-span-center">bottom</span>:
+            <span class="second-span-center">0</span>;
+            <br>
+            
+            <span class="first-span-center">background-color</span>:
+            <span class="second-span-center">black</span>;
+            <br>
+            <span class="first-span-center">color</span>:
+            <span class="second-span-center">white</span>;
+            <br>
+            <span class="first-span-center">height</span>:
+            <span class="second-span-center">100px</span>;
+          </p>
+          &emsp;}
+          <br>
+          <br>
         </div>
 
-        <br>
         <br>
         <p>
             Risultato:
         </p>
 
-        <img src="../Immagini/Layout.JPG" width="700px">
-        <br><br><br><br><br><br><br><br>
+        <br>
 
+        <div class="esempiolayout">
+          <div class="esempionav">
+            Nav
+          </div>
+          
+          <div class="esempioarticle">
+            Article
+          </div>
+
+          <div class="esempioaside">
+            Aside
+          </div>
+
+          <div class="esempiofooter">
+            Footer
+          </div>
+        </div>
+        <br>
         </article>
 
         <aside>
@@ -191,6 +329,8 @@
   
     <img src="../Immagini/Logo.png" width="100px">
   </footer>
+
+  <script src="../noscroll.js"></script>
     
 </body>
 </html>

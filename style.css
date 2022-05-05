@@ -852,6 +852,7 @@ header li a:hover .homebutton
     z-index: 3;
     /*background-image: linear-gradient(to right, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
+    border-radius: 10px 10px 0 0;
 }
 
 .html-information h1, .html-information h2
@@ -897,6 +898,7 @@ header li a:hover .homebutton
     align-items: center;
     z-index: 1;
     /*background-image: linear-gradient(to left, #f093fb 0%, #f5576c 100%);*/
+    border-radius: 0 0 10px 10px;
 }
 
 .javascript-information h1, .javascript-information h2
@@ -1121,13 +1123,15 @@ section
 nav 
 {
     float: left;
-    width: 10%;
+    width: 12%;
     height: auto;
     background: #24252A;
     padding: 20px;
     margin: 0;
     padding: 0;
     position: fixed;
+    height: 72vh;
+    overflow-y: scroll;
 }
 
 /* span
@@ -1138,9 +1142,9 @@ nav
 article 
 {
     float: left;
-    margin-left: 10%;
+    margin-left: 12%;
     padding: 20px;
-    width: 70%;
+    width: 77%;
     background-color: white;  /*#f1f1f1;*/
     height: auto; 
     min-height: 700px;
@@ -1169,13 +1173,6 @@ article .img-html-css
 .img-html-css img
 {
     background-color: transparent;
-}
-
-article .box-esempi-content
-{
-    font-size: 22px; 
-    font-family: 'Nunito', sans-serif; 
-    background-color: white;
 }
 
 article li
@@ -1545,8 +1542,9 @@ footer img
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkmagenta;
-    padding: 5px;
-    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
 }
 
 p.paragrafo1
@@ -1554,8 +1552,9 @@ p.paragrafo1
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkmagenta;
-    padding: 5px;
-    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
 }
 
 p.paragrafo2
@@ -1563,8 +1562,9 @@ p.paragrafo2
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkviolet;
-    padding: 5px;
-    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
 }
 
 .segnalibro
@@ -1632,7 +1632,7 @@ p.paragrafo2
     color: white;
 }
 
-.box-esempi
+/* .box-esempi
 {
     background-color: grey;
     width: 90%;
@@ -1647,6 +1647,7 @@ p.paragrafo2
 
 .box-esempi-content
 {
+    color: black;
     margin: 20px;
     width: 90%;
     padding: 20px;
@@ -1654,7 +1655,7 @@ p.paragrafo2
     box-shadow: 5px 5px black;
     position: relative;
     border-left: 5px solid darkgray;
-}
+} */
 
 /*==========================Input=============================*/
 article fieldset label
@@ -1694,6 +1695,17 @@ article fieldset
     right: 10px;
     font-family: 'Poppins', sans-serif;
     background: white;
+}
+
+.normal-input-form
+{
+    width: 40%;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    padding: 3px;
 }
 
 .normal-input-img
@@ -1837,10 +1849,6 @@ article h3
     width: 100vw;
 }
 
-
-
-
-
 /*==================Altri elementi pagina==================*/
 
 /*Selectiom*/
@@ -1869,27 +1877,72 @@ article h3
 }
 
 /*==================Altro==================*/
+.formdiesempio
+{
+    background-color: transparent;
+}
+
+.esempio-form
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.esempio-form-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+
+@media (max-width: 1080px)
+{
+    .esempio-form-content
+    {
+        flex-direction: column;
+        width: 90%;
+        padding: 0 0;
+        margin: 0 auto;
+    }
+
+    .normal-input-form
+    {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
+
+
+
+/*==================Altro==================*/
 
 .second-menu
 {
     display: none;
 }
 
-.esempiojavascript
+.esempiojavascript, .box-esempi
 {
+    background-color: #24252A;
     border-radius: 10px;
     color: white;
-    word-break: break-all;
+    word-break: break-word;
     text-align: left;
     margin-bottom: 50px;
+    border-left: 6px solid #E37;
 }
 
-.esempiojavascript span
+.esempiojavascript span, .box-esempi span
 {
     background-color: transparent;
 }
 
-.esempiojavascript p
+.esempiojavascript p, .box-esempi p
 {
     background-color: transparent;
     width: 95%;
@@ -1918,6 +1971,73 @@ article h3
 .tabellaoperatori th
 {
     margin-inline: 10px;
+}
+
+.esbutton::before
+{
+    background-color: #E34672;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.esbutton:hover::before
+{
+    width: 100%;
+}
+
+.esempiolayout
+{
+    display: flex;
+    position: relative;
+}
+
+.esempionav, .esempioarticle, .esempioaside, .esempiofooter
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.esempionav
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 20%;
+    background-color: lightgrey;
+}
+
+.esempioarticle
+{
+    width: 60%;
+    background-color: grey;
+}
+
+.esempioaside
+{
+    width: 20%;
+    background-color: lightgrey;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.esempiofooter
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #24252A;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /*==================Responsive==================*/
@@ -2306,7 +2426,7 @@ article h3
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 160px;
+        margin-top: 180px;
         background: transparent;
         display: none;
     }
@@ -2333,7 +2453,7 @@ article h3
     .sub-menu
     {
         display: block;
-        margin-top: 520px;
+        margin-top: 500px;
         margin-left: 10px;
     }
 
@@ -2482,11 +2602,12 @@ article h3
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 70px;
     }
 
     article
     {
-        width: 90%;
+        width: 93%;
         margin: 0 auto;
         margin-bottom: 200px;
     }
@@ -2643,7 +2764,5 @@ article h3
     .first-divcenter-content2
     {
         font-size: 65px;
-    }
-
-    
+    }    
 }
