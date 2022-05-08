@@ -6,7 +6,7 @@
     background-color: #24252A;
     margin: 0%;
     padding: 0%;
-    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
 }
 
 :root
@@ -1529,6 +1529,43 @@ footer img
     transition: all 0.4s ease 0s;
     background-color: transparent;
     z-index: 1;
+}
+
+.table2 table tr th
+{
+    font-size: 25px;
+}
+
+@media (max-width: 1500px)
+{
+    .left-button
+    {
+        margin-bottom: 200px;
+    }
+
+    .table2 table tr, .table2 table th, .table2 table a, .table2 table tr th
+    {
+        font-size: 20px;    
+    }
+
+    .table2 table tr th
+    {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 1080px)
+{
+    .table2 table tr, .table2 table th, .table2 table a, .table2 table tr th
+    {
+        font-size: 15px;    
+    }
+
+    .table2 table img
+    {
+        max-width: 100px;
+    }
 }
 
 .left-button:hover
