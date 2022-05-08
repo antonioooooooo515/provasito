@@ -2516,6 +2516,13 @@ article h3
         overflow: hidden;
         font-family: 'Poppins';
         text-transform: uppercase;
+        word-break: keep-all;
+        width: fit-content;
+    }
+
+    .menu.barraaperta
+    {
+        overflow-x: hidden;
     }
 
     .sub-menu ul li a:hover
@@ -2624,6 +2631,10 @@ article h3
         overflow: hidden;
     }
 
+    .sub-menu ul li a
+    {
+        font-size: 30px;
+    }
 }
 
 
