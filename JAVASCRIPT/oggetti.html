@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AS | JAVASCRIPT/Funzioni</title>
+    <title>AS | JAVASCRIPT/Oggetti</title>
     <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,12 +71,34 @@
         </nav>
 
         <article>
-            <h1 class="titolo">Funzioni</h1>
+            <h1 class="titolo">Oggetti, proprietà e metodi della vita reale</h1>
             <br>
 
             <p>
-                Una <span style="background-color: white; color: #E37;">funzione Javascript</span> è un blocco di codice
-                progettato per eseguire un attività particolare. Vengono eseguite quando "qualcosa" le invoca.
+                Nella vita reale, un computer è un <span style="background-color: white; color: #E37;">oggetto</span>. Esso ha <span style="background-color: white; color: #E37;">proprietà</span>, come peso, colore e metodi, <span style="background-color: white; color: #E37;">start</span> e <span style="background-color: white; color: #E37;">stop</span>.
+                <br>
+                Tutte i computer hanno le stesse <span style="background-color: white; color: #E37;">proprietà</span> , ma diversi <span style="background-color: white; color: #E37;">valori</span> in esse. Hanno gli stessi <span style="background-color: white; color: #E37;">metodi</span> , ma possono essere eseguiti in <span style="background-color: white; color: #E37;">diversi momenti</span>.
+            </p>
+            <br>
+
+            <h2 style="background-color: white; color: #E37;">Oggetti JavaScript</h2>
+
+            <p>
+                Le variabili JavaScript sono contenitori di dati.
+                Questo codice assegna un <span style="background-color: white; color: #E37;">valore semplice</span>, ad una <span style="background-color: white; color: #E37;">variabile</span> denominata "computer":
+            </p>
+            <br>
+
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                &emsp;<span class="first-span-center">let</span> computer = 
+                <span class="second-span-center">"MSI"</span>;
+                <br>
+                <br>
+            </div>
+
+            <p>
+                Anche gli oggetti sono variabili, ma possono contenere molti valori.
                 <br>
                 Esempio:
             </p>
@@ -84,15 +106,15 @@
 
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
-                <p style="width: 92%;"><span class="first-span-center">function <span
-                            style="color: white;">myFunction(</span><span class="second-span-center">p1, p2</span><span
-                            style="color: white;">) {</span></p>
-                <p style="width: 87%;"><span class="first-span-center">return</span> p1 * p2;</p>
-                <p style="width: 92%;">}</p>
+                <p style="width: 90%;"><span class="first-span-center">const</span> car = {type: <span class="second-span-center">"Fiat"</span>, model: <span class="second-span-center">"500"</span>, color: <span class="second-span-center">"white"</span>};</p>
                 <br>
             </div>
 
-            <h2 style="background-color: white; color: #E37;">Sintassi della funzione</h2>
+            <p>
+                I valori vengono scritti come coppie <span style="color: #E37; background-color: white;">nome:valore</span>, separati da due punti.
+            </p>
+
+            <!-- <h2 style="background-color: white; color: #E37;">Sintassi della funzione</h2>
 
             <p>
                 Una funzione Javascript è definita con la parola chiave "<span
@@ -168,7 +190,7 @@
                 <p style="width: 92%;"><span class="first-span-center">//La funzione ritorna il prodotto tra a e b. Il valore della variabile x sarà 35</span></p> 
 
                 <br>
-            </div>
+            </div> -->
 
         </article>
 
