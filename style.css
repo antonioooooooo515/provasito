@@ -1994,6 +1994,7 @@ article h3
     padding: 20px;
     border: 2px solid black;
     font-family: 'Poppins';
+    word-break: break-all;
 }
 
 .tabellaoperatori, .tabellaoperatori tr, .tabellaoperatori th, .tabellaoperatori td
