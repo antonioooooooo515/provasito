@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AS | CSS/Stili e applicazione</title>
+  <title>AS | CSS/Box Model</title>
   <link rel="stylesheet" href="../style.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,20 +100,31 @@
     </nav>
 
     <article>
-      <h1 class="titolo">Applicazione degli stili</h1>
+      <h1 class="titolo">Box Model</h1>
       <br>
 
       <p>
-        I fogli di stile consentono di definire lo stile di un particolare tag o di una famiglia di tag HTML attraverso
-        una <b style="background-color: white;">regola di stile</b>. Una regola di stile è formata da una sequenza di
-        coppie rappresentate da un nome separato dai due punti dal suo valore, separate tra di loro dal punto e virgola
-        e racchiuse tra parentesi graffe.
-        <br>
-        Esempio:
-        <br>
+        Il termine "<span style="background-color: white; color: #E37;">box model</span>" viene utilizzato quando si parla di design e layout. Il box model è essenzialmente un box che avvolge ogni elemento HTML. É costituito da margini, bordi, spaziatura interna (padding) e contenuto effettivo:
       </p>
+      <br>
+      <br>
 
-      <div class="box-esempi">
+      <div class="box-model-esempio">
+          <div class="bm1 bm">Margin</div>
+          <div class="bm2 bm">Border</div>
+          <div class="bm3 bm">Padding</div>
+          <div class="bm4 bm">Content</div>
+      </div>
+      <br><br>
+
+      <ul>
+          <li>Contenuto: contenuto del box, dove vengono visualizzati testo e relative immagini;</li>
+          <li>Padding: crea un'area trasparente intorno al contenuto;</li>
+          <li>Bordo: circonda i primi due;</li>
+          <li>Margine: crea un'area trasparente intorno al bordo.</li>
+      </ul>
+
+      <!-- <div class="box-esempi">
         <br>
         &emsp; <span class="first-span-center">p</span>
         <br>
@@ -144,7 +155,7 @@
         <li>stili in linea;</li>
         <li>stili a livello di documento;</li>
         <li>stili esterni.</li>
-      </ul>
+      </ul> -->
     </article>
 
     <aside>

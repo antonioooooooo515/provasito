@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AS | JAVASCRIPT/Variabili</title>
+    <title>AS | JAVASCRIPT/Array</title>
     <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,101 +74,96 @@
         </nav>
 
         <article>
-            <h1 class="titolo">Variabili</h1>
+            <h1 class="titolo">Array</h1>
             <br>
 
             <p>
-                Le <span style="background-color: white; color: #E37;">variabili</span> sono contenitori per la memorizzazione dei dati. Esempio:
+                Un <span style="background-color: white; color: #E37;">array</span> è una variabile speciale, che può contenere più di un valore al suo interno.
+                <br>
+                Esempio:
             </p>
+            <br>
 
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
-                &emsp; <span class="first-span-center">var</span> x = 
-                <span class="second-span-center">10</span>;
-                <br>
-                &emsp; <span class="first-span-center">var</span> y = 
-                <span class="second-span-center">5</span>;
-                <br>
-                &emsp; <span class="first-span-center">var</span> z = 
-                <span class="second-span-center">x</span> +
-                <span class="second-span-center">y</span>;
-                <br>
+                <p style="width: 92%;">
+                    <span class="first-span-center">const</span> computers =
+                    [<span class="second-span-center">"MSI", "HP", "Samsung"</span>];
+                </p>
                 <br>
             </div>
 
-            <h1 class="titolo">Variabili let</h1>
-            <p style="margin-bottom: 50px;">
-                Le variabili definite con <span style="background-color: white; color: #E37;">let</span> non possono essere ridichiarate.
-                Le variabili definite con <span style="background-color: white; color: #E37;">let</span> devono essere dichiarate prima dell'uso.
-                Le variabili definite con <span style="background-color: white; color: #E37;">let</span> hanno Block Scope.
-                <br>
-                Per esempio, non è possibile fare questo:
+            <h2 style="background-color: white; color: #E37;">Perchè usarli?</h2>
+
+            <p>
+                In caso di un elenco di elementi, la memorizzazione di essi in singole variabili potrebbe essere simile a questa:
             </p>
+            <br>
 
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
-                &emsp; <span class="first-span-center">let</span> x = 
-                <span class="second-span-center">10</span>;
-                <br>
-                &emsp; <span class="first-span-center">let</span> x = 
-                <span class="second-span-center">5</span>;
-                <br>
-                <br>
-                &emsp; <p><span class="first-span-center">// La variabile è gia stata dichiarata in precedenza, quindi il suo valore rimane 10</span></p> 
-                <br>
-                <br>
-                
-                &emsp; <span class="first-span-center">let</span> x = 
-                <span class="second-span-center">10</span>;  <span class="first-span-center">// Qui x è 10</span>
-                <br>
-                &emsp;{
-                <br>
-                &emsp; &emsp; <span class="first-span-center">let</span> x = 
-                <span class="second-span-center">5</span>;  <span class="first-span-center">// Qui x è 5</span>
+                <p style="width: 92%;">
+                    <span class="first-span-center">const</span> computer1 = 
+                    <span class="second-span-center">"MSI"</span>;
+                    <br>
 
-                <br>
-                &emsp;{
-                &emsp; <p><span class="first-span-center">// Qui x è 10</span>
-                <br>
-                <br>
+                    <span class="first-span-center">const</span> computer2 = 
+                    <span class="second-span-center">"HP"</span>;
+                    <br>
 
+                    <span class="first-span-center">const</span> computer2 = 
+                    <span class="second-span-center">"Samsung"</span>;
+                </p>
+                <br>
             </div>
 
-            <h1 class="titolo">Variabili const</h1>
-            <p style="margin-bottom: 50px;">
-                Le variabili definite con <span style="background-color: white; color: #E37;">const</span> non possono essere ridichiarate.
-                Le variabili definite con <span style="background-color: white; color: #E37;">const</span> non possono essere riassegnate.
-                Le variabili definite con <span style="background-color: white; color: #E37;">const</span> hanno Block Scope.
-                <br>
-                Per esempio, non è possibile fare questo:
+            <p>
+                Tuttavia, la soluzione più semplice sarà sempre l'utilizzo di un array.
             </p>
+            <br>
+
+            <h2 style="background-color: white; color: #E37;">Creazione di un array</h2>
+
+            <p>
+                Esistono due metodi per creare un array:
+            </p>
+            <br>
 
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
-                &emsp; <span class="first-span-center">const</span> PI;
-                <br>
-                &emsp; PI = 3.14;
-                <br>
-                &emsp; <p><span class="first-span-center">// Questo darà un errore</span></p> 
-                <br>
-                <br>
-
-                &emsp; <span class="first-span-center">const</span> x = 
-                <span class="second-span-center">10</span>;  &emsp; <span class="first-span-center">// Qui x è 10</span>
-                <br>
-                &emsp;{
-                <br>
-                &emsp; &emsp; <span class="first-span-center">const</span> x = 
-                <span class="second-span-center">5</span>;  &emsp; <span class="first-span-center">// Qui x è 5</span>
-
-                <br>
-                &emsp;{
-                &emsp; <p><span class="first-span-center">// Qui x è 10</span>
-                <br>
+                <p style="width: 92%;">
+                    <span class="first-span-center">PRIMO METODO</span>
+                    <br><br>
+                    <span class="first-span-center">const</span> array_name = 
+                    [<span class="second-span-center">"item1", "item2", ...</span>];
+                    <br>
+                    <br>
+                    Esempio:
+                    <br>
+                    <span class="first-span-center">const</span> computers = 
+                    [<span class="second-span-center">"MSI", "HP", "Samsung"</span>];
+                </p>
                 <br>
             </div>
 
-            
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                <p style="width: 92%;">
+                    <span class="first-span-center">SECONDO METODO</span>
+                    <br><br>
+                    <span class="first-span-center">const</span> array_name = 
+                    <span class="first-span-center">new</span> Array
+                    (<span class="second-span-center">"item1", "item2", ...</span>);
+                    <br>
+                    <br>
+                    Esempio:
+                    <br>
+                    <span class="first-span-center">const</span> computers = 
+                    <span class="first-span-center">new</span> Array
+                    (<span class="second-span-center">"MSI", "HP", "Samsung"</span>);
+                </p>
+                <br>
+            </div>
         </article>
 
         <aside>

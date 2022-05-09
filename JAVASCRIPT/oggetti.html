@@ -23,16 +23,16 @@
 
             <ul>
                 <li><a href="../index.html"><i class='bx bxs-home homebutton'></i></a></li>
-                <li><a href="../HTML/htmlgenerale.html" class="a-s">HTML</a></li>
+                <li><a href="../HTML/htmlgenerale.html">HTML</a></li>
                 <li><a href="../CSS/cssgenerale.html">CSS</a></li>
-                <li><a href="javascriptgenerale.html">JAVASCRIPT</a></li>
+                <li><a href="javascriptgenerale.html" class="a-s">JAVASCRIPT</a></li>
             </ul>
 
-            <div class="menu-separetion">
+            <div class="menu-separetion" style="margin-top: 200px;">
                 <div class="menu-separetion-content"></div>
             </div>
 
-            <div class="sub-menu" style="margin-top: -60px;">
+            <div class="sub-menu" style="margin-top: -30px;">
                 <ul>
                     <li><a href="javascriptgenerale.html">Generale</a></li>
                     <li><a href="introduzione.html">Introduzione</a></li>
@@ -40,6 +40,7 @@
                     <li><a href="operatori.html">Operatori</a></li>
                     <li><a href="funzioni.html">Funzioni</a></li>
                     <li><a href="oggetti.html">Oggetti</a></li>
+                    <li><a href="array.html">Array</a></li>
                 </ul>
             </div>
         </div>
@@ -55,6 +56,7 @@
             <li><a href="operatori.html">Operatori</a></li>
             <li><a href="funzioni.html">Funzioni</a></li>
             <li><a href="oggetti.html">Oggetti</a></li>
+            <li><a href="array.html">Array</a></li>
         </ul>
     </div>
 
@@ -67,6 +69,7 @@
                 <li><a href="operatori.html">Operatori</a></li>
                 <li><a href="funzioni.html">Funzioni</a></li>
                 <li><a href="oggetti.html">Oggetti</a></li>
+                <li><a href="array.html">Array</a></li>
             </ul>
         </nav>
 
@@ -75,9 +78,15 @@
             <br>
 
             <p>
-                Nella vita reale, un computer è un <span style="background-color: white; color: #E37;">oggetto</span>. Esso ha <span style="background-color: white; color: #E37;">proprietà</span>, come peso, colore e metodi, <span style="background-color: white; color: #E37;">start</span> e <span style="background-color: white; color: #E37;">stop</span>.
+                Nella vita reale, un computer è un <span style="background-color: white; color: #E37;">oggetto</span>.
+                Esso ha <span style="background-color: white; color: #E37;">proprietà</span>, come peso, colore e
+                metodi, <span style="background-color: white; color: #E37;">start</span> e <span
+                    style="background-color: white; color: #E37;">stop</span>.
                 <br>
-                Tutte i computer hanno le stesse <span style="background-color: white; color: #E37;">proprietà</span> , ma diversi <span style="background-color: white; color: #E37;">valori</span> in esse. Hanno gli stessi <span style="background-color: white; color: #E37;">metodi</span> , ma possono essere eseguiti in <span style="background-color: white; color: #E37;">diversi momenti</span>.
+                Tutte i computer hanno le stesse <span style="background-color: white; color: #E37;">proprietà</span> ,
+                ma diversi <span style="background-color: white; color: #E37;">valori</span> in esse. Hanno gli stessi
+                <span style="background-color: white; color: #E37;">metodi</span> , ma possono essere eseguiti in <span
+                    style="background-color: white; color: #E37;">diversi momenti</span>.
             </p>
             <br>
 
@@ -85,13 +94,14 @@
 
             <p>
                 Le variabili JavaScript sono contenitori di dati.
-                Questo codice assegna un <span style="background-color: white; color: #E37;">valore semplice</span>, ad una <span style="background-color: white; color: #E37;">variabile</span> denominata "computer":
+                Questo codice assegna un <span style="background-color: white; color: #E37;">valore semplice</span>, ad
+                una <span style="background-color: white; color: #E37;">variabile</span> denominata "computer":
             </p>
             <br>
 
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
-                &emsp;<span class="first-span-center">let</span> computer = 
+                &emsp;<span class="first-span-center">let</span> computer =
                 <span class="second-span-center">"MSI"</span>;
                 <br>
                 <br>
@@ -106,92 +116,55 @@
 
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
-                <p style="width: 90%;"><span class="first-span-center">const</span> car = {type: <span class="second-span-center">"Fiat"</span>, model: <span class="second-span-center">"500"</span>, color: <span class="second-span-center">"white"</span>};</p>
+                <p style="width: 90%;"><span class="first-span-center">const</span> computer = {type: <span
+                        class="second-span-center">"Gaming"</span>, model: <span class="second-span-center">"MSI
+                        Infinite S"</span>, color: <span class="second-span-center">"white"</span>};</p>
                 <br>
             </div>
 
             <p>
-                I valori vengono scritti come coppie <span style="color: #E37; background-color: white;">nome:valore</span>, separati da due punti.
+                I valori vengono scritti come coppie <span
+                    style="color: #E37; background-color: white;">nome:valore</span>, separati da due punti.
             </p>
+            <br>
 
-            <!-- <h2 style="background-color: white; color: #E37;">Sintassi della funzione</h2>
+            <h2 style="background-color: white; color: #E37;">Proprietà dell'oggetto e il loro accesso</h2>
 
             <p>
-                Una funzione Javascript è definita con la parola chiave "<span
-                    style="background-color: white; color: #E37;">function</span>", seguita da un nome e dalle parentesi
-                tonde. I nomi delle funzioni possono contenere lettere, cifre, trattini bassi e segni di dollaro. Le
-                parentesi possono includere i nomi dei parametri separati da virgole: (parametro1, parametro2, ...). Il
-                codice della funzione è racchiuso tra parentesi graffe.
-                <br>
-                Esempio:
+                Le coppie <span style="background-color: white; color: #E37;">nome:valore</span> sono chiamate <span
+                    style="background-color: white; color: #E37;">proprietà</span>. É possibile accedervi in due modi:
             </p>
             <br>
 
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
-                <p style="width: 92%;"><span class="first-span-center">function <span
-                            style="color: white;">name(</span><span class="second-span-center">parametro1, parametro2,
-                            ...</span><span style="color: white;">) {</span></p>
-                <p style="width: 87%;"><span class="first-span-center">//code to be executed</span></p>
-                <p style="width: 92%;">}</p>
+                <p style="width: 92%;">
+                    <span class="first-span-center">PRIMO METODO</span>
+                    <br><br>
+                    <span class="second-span-center">objectName.propertyName</span>
+                    <br>
+                    <br>
+                    Esempio:
+                    <br>
+                    <span class="first-span-center">computer.color</span>;
+                </p>
                 <br>
             </div>
 
-            <p>
-                I <span style="background-color: white; color: #E37;">parametri</span> della funzione sono elencati tra
-                parantesi tonde nella definizione della funzione. Gli <span
-                    style="background-color: white; color: #E37;">argomenti</span> della funzione sono i valori ricevuti
-                dalla funzione quando viene richiamata. All'interno della funzione, gli argomenti (i parametri) si
-                comportano come variabili locali.
-            </p>
-            <br>
-
-            <h2 style="background-color: white; color: #E37; ">Invocazione di una funzione</h2>
-
-            <p>
-                Il codice all'interno della funzione verrà eseguito quando "qualcosa" la invocherà:
-            </p>
-            <br>
-
-            <ul>
-                <li>quando si verifica un evento (quando un utente fa clic su un pulsante);</li>
-                <li>quando viene invocato (chiamato) dal codice JavaScript;</li>
-                <li>automaticamente (auto-invoco).</li>
-            </ul>
-            <br>
-
-            <h2 style="background-color: white; color: #E37; ">Funzione ritorno</h2>
-
-            <p>
-                Quando JavaScript raggiunge lo stato di <span
-                    style="background-color: white; color: #E37;">return</span>, la funzione interrompe l'esecuzione. Se
-                la funzione è stata invocata da un'istruzione, JavaScript "ritornerà" per eseguire il codice dopo
-                l'istruzione di richiamo. Le funzioni spesso calcolano un valore che deve essere "restituito" al
-                "chiamante".
-                <br>
-                Esempio:
-            </p>
-            <br>
-
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
-                <p style="width: 92%;"><span class="first-span-center">let <span style="color: white;">x =
-                            myFunction(</span><span class="second-span-center">5, 7</span><span
-                            style="color: white;">);</span></p>
-                <p style="width: 92%;"><span class="first-span-center">//La funzione è stata chiamata, il valore sarà
-                        ritornato con x</span></p>
+                <p style="width: 92%;">
+                    <span class="first-span-center">SECONDO METODO</span>
+                    <br><br>
+                    <span class="second-span-center">objectName["propertyName"]</span>
+                    <br>
+                    <br>
+                    Esempio:
+                    <br>
+                    <span class="first-span-center">computer["color"]</span>;
+                </p>
                 <br>
-
-                <p style="width: 92%;"><span class="first-span-center">function <span
-                            style="color: white;">myFunction(</span><span class="second-span-center">a, b</span><span
-                            style="color: white;">) {</span></p>
-                <p style="width: 87%;"><span class="first-span-center">return</span> a * b;</p>
-                <p style="width: 92%;">}</p>
-                <p style="width: 92%;"><span class="first-span-center">//La funzione ritorna il prodotto tra a e b. Il valore della variabile x sarà 35</span></p> 
-
-                <br>
-            </div> -->
-
+            </div>
         </article>
 
         <aside>

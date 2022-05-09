@@ -1994,7 +1994,6 @@ article h3
     padding: 20px;
     border: 2px solid black;
     font-family: 'Poppins';
-    word-break: break-all;
 }
 
 .tabellaoperatori, .tabellaoperatori tr, .tabellaoperatori th, .tabellaoperatori td
@@ -2009,6 +2008,23 @@ article h3
 .tabellaoperatori th
 {
     margin-inline: 10px;
+}
+
+@media (max-width: 1080px)
+{
+    .tabellaoperatori, .tabellaoperatori tr, .tabellaoperatori th, .tabellaoperatori td
+    {
+        background-color: white;
+        font-size: 17px;
+        border-bottom: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+    }
+
+    .tabellaoperatori th
+    {
+        margin-inline: 8px;
+    }
 }
 
 .esbutton::before
@@ -2076,6 +2092,71 @@ article h3
     color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+/*==================Altro==================*/
+.box-model-esempio
+{
+    position: relative;
+    height: 400px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.bm
+{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #E37;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.bm1
+{
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-style: dashed;
+}
+
+.bm2
+{
+    height: 80%;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #E37;
+    color: white;
+}
+
+.bm3
+{
+    height: 60%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bm4
+{
+    height: 40%;
+    width: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dashed;
 }
 
 /*==================Responsive==================*/
@@ -2491,7 +2572,7 @@ article h3
     .sub-menu
     {
         display: block;
-        margin-top: 500px;
+        margin-top: 450px;
         margin-left: 10px;
     }
 
@@ -2502,7 +2583,7 @@ article h3
 
     .sub-menu ul li a
     {
-        padding: 13px 10px;
+        padding: 5px 10px;
         text-decoration: none;
         font-size: 30px;
         color: white;
@@ -2528,7 +2609,7 @@ article h3
 
     .sub-menu ul li a:hover
     {
-        padding: 13px 10px;
+        padding: 5px 10px;
         font-size: 30px;
         background: #242424;
     }
@@ -2692,6 +2773,7 @@ article h3
         margin-top: 150px;
         width: 95%;
         text-align: center;
+        border-bottom: 3px solid #E37;
     }
 
     .second-menu ul
