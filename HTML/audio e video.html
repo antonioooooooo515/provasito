@@ -96,10 +96,19 @@
           <br>
 
           <h2>
-            In una pagina HTML possono anche essere inseriti diversi elementi multimediali come filmati e suoni, oppure elementi particolari per i quali è necessario un plug-in. I file audio e video possono essere inclusi nella pagina tramite il tag "embed". Sintassi:
+            In una pagina HTML possono anche essere inseriti diversi elementi multimediali come filmati e suoni, oppure elementi particolari per i quali è necessario un plug-in. I file audio e video possono essere inclusi nella pagina tramite il tag &#60embed&#62. 
             <br>
-            &#60embed src="url del file audio o video"&#62
+            Sintassi:
           </h2>
+
+          <div class="esempiojavascript" style="background-color: #24252A;">
+            <br>
+            <p style="width: 92%;">
+              &#60embed<span class="first-span-center"> src</span> =
+              <span class="second-span-center">"url del file audio o video"</span>>
+            </p>
+            <br>
+          </div>
 
           <p>
             I suoi principali attributi sono:
@@ -113,19 +122,35 @@
             <li>"height", che indica l'altezza della finestra in cui verrà eseguito il file;</li>
             <li>"hidden", che permette di nascondere la finestra in cui verrà eseguito il file.</li>
           </ul>
+          
+          <p>
+            Per inserire un filmato si può utilizzare il tag &#60embed&#62 incorporandolo all’interno del tag &#60object&#62, che è più recente e consente di selezionare il tipo di player da utilizzare tramite l’attributo "classid". La sintassi è la seguente:
+          </p>
+
+          <div class="esempiojavascript" style="background-color: #24252A;">
+            <br>
+            <p style="width: 92%;">
+              &#60object<span class="first-span-center"> data</span> =
+              <span class="second-span-center">"url del file audio o video"</span>>
+              <span class="first-span-center"> type</span> =
+              <span class="second-span-center">"tipo"</span>
+              <span class="first-span-center"> classid</span> =
+              <span class="second-span-center">"codebase"</span>
+            </p>
+            <p style="width: 90%;">
+              &#60embed<span class="first-span-center"> src</span> =
+              <span class="second-span-center">"url del file audio o video"</span>>
+              <span class="first-span-center"> autostart</span> =
+              <span class="second-span-center">"true/false"</span>
+            </p>
+            <p style="width: 92%;">
+              &#60/object>
+            </p>
+            <br>
+          </div>
 
           <p>
-          <br>
-          Per inserire un filmato si può utilizzare il tag "embed" incorporandolo all’interno del tag "object", che è più recente e consente di selezionare il tipo di player da utilizzare tramite l’attributo "classid". La sintassi è la seguente:
-          <br>
-          &#60object data="url del file" type="tipo" autostart="true/false" classid="" codebase=""&#62
-          <br>
-          &#60embed src="url del file" autostart="true/false"&#62
-          <br>
-          &#60/object&#62
-          <br>
-          <br>
-          Vediamo il significato degli attributi principali:
+            Vediamo il significato degli attributi principali:
           </p>
 
           <ul>
@@ -139,12 +164,28 @@
           </p>
 
           <h2>
-            Altri tag utilizzati per inserire file audio e video: tag "video" e tag "audio". Sintassi:
-            <br>
-            &#60video src="">/video&#62
-            <br>
-            &#60audio src="">/audio&#62
+            Altri tag utilizzati per inserire file audio e video: tag &#60video&#62 e tag &#60audio&#62. Sintassi:
           </h2>
+
+          <div class="esempiojavascript" style="background-color: #24252A;">
+            <br>
+            <p style="width: 92%;">
+              &#60video<span class="first-span-center"> src</span> =
+              <span class="second-span-center">"url del file audio o video"</span>>
+              &#60/video>
+            </p>
+            <br>
+          </div>
+
+          <div class="esempiojavascript" style="background-color: #24252A;">
+            <br>
+            <p style="width: 92%;">
+              &#60audio<span class="first-span-center"> src</span> =
+              <span class="second-span-center">"url del file audio o video"</span>>
+              &#60/audio>
+            </p>
+            <br>
+          </div>
 
           <p>
             I principali attributi sono:
@@ -177,12 +218,9 @@
           <audio style="background-color: white;" src="../Audio/Canzone1.mp3" type="audio/mp3" controls></audio>
           <br>
           <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
 
+          <button class="provatu"><a href="https://codepen.io/antonioooooooo515/pen/JjpXQEx" target="_blank">Prova
+            tu!</a></button>
         </article>
 
         <aside>
