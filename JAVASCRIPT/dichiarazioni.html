@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AS | JAVASCRIPT/Generale</title>
+    <title>AS | JAVASCRIPT/Dichiarazioni</title>
     <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,102 +72,94 @@
                 <li><a href="operatori.html">Operatori</a></li>
                 <li><a href="funzioni.html">Funzioni</a></li>
                 <li><a href="oggetti.html">Oggetti</a></li>
-                <li><a href="array.html">Array</a></li>
+                <li><a href="array.html">Array</a></li>  
             </ul>
         </nav>
 
-        <article style="overflow-x: hidden;">
-            <h1 class="titolo">Generale</h1>
+        <article>
+            <h1 class="titolo">Dichiarazioni</h1>
             <br>
 
+
+            <h2 style="background-color: white; color: #E37;">Programmi JavaScript</h2>
+
             <p>
-                <span class="span-ev">JAVASCRIPT</span> è il linguaggio di programmazione più popolare al
-                mondo. Dispone di tipizzazione dinamica , orientamento agli oggetti basato su prototipi e funzioni di
-                prima classe. È multiparadigma e supporta stili di programmazione basati su eventi, funzionali e
-                imperativi.
+                Un <span style="background-color: white; color: #E37;">programma</span> è è un elenco di <span class="span-ev">istruzioni</span> che devono essere <span class="span-ev">eseguite</span> da computer. In un linguaggio di programmazione, queste istruzioni di programmazione sono chiamate <span class="span-ev">istruzioni</span>.
             </p>
             <br><br>
 
-            <h2 style="background-color: white; color: #E37;">Commenti JavaScrit</h2>
+            <h2 style="background-color: white; color: #E37;">Dichiarazioni JavaScript</h2>
 
             <p>
-                Non tutte le istruzioni JavaScript sono "eseguite". Infatti, il codice dopo le doppie barre <span
-                    class="span-ev">//</span> o tra <span class="span-ev">/*</span> e <span class="span-ev">*/</span>
-                viene trattato come un <span class="span-ev">commento</span>. I commenti vengono ignorati e non verranno
-                eseguiti. Esempio:
+                Le istruzioni JavaScript sono composte da: valori, operatori, espressioni, parole chiave e commenti. Ogni istruzione è separata dalle altre dal <span class="span-ev">punto e virgola</span>. Esempio:
             </p>
             <br>
 
             <div class="esempiojavascript" style="background-color: #24252A;">
                 <br>
                 <p style="width: 92%;">
-                    <span class="first-span-center">let</span> x =
-                    <span class="second-span-center">5</span>;
-                    <br>
-                    <br>
-                    <span class="first-span-center">//x=6; Questo non verrà eseguito</span>
+                    <span class="first-span-center">document.getElementById</span>(<span class="second-span-center">"prova"</span>)<span class="first-span-center">.innerHTML</span> = "Hello world";
                 </p>
                 <br>
             </div>
 
-            <button><a href="https://codepen.io/antonioooooooo515/pen/qBxqBeg" target="_blank">Prova
-                    tu!</a></button><br><br><br>
+            <button><a href="https://codepen.io/antonioooooooo515/pen/bGLBNBW" target="_blank">Prova
+                tu!</a></button><br><br><br>
 
-            <h2 style="background-color: white; color: #E37;">Identificatori/nomi JavaScrit</h2>
 
-            <p>
-                Gli <span class="span-ev">identificatori</span> sono <span class="span-ev">nomi</span> JavaScript.
-                Vengono utilizzati per denominare variabili, parole chiave e funzioni. Le regole erp i nomi sono le
-                stesse nella maggior parte dei linguaggi di programmazione. Un <span class="span-ev">nome</span>
-                JavaScript deve iniziare con:
-            </p>
-
-            <ul>
-                <li>una lettera (AZ o az);</li>
-                <li>un simbolo del dollaro ($);</li>
-                <li>un trattino basso (_).</li>
-            </ul>
+            <h2 style="background-color: white; color: #E37;">Parole chiave JavaScipt</h2>
 
             <p>
-                I caratteri successivi possono essere lettere, cifre, trattini bassi o segni di dollaro.
+                Le istruzioni JavaScript spesso iniziano con una <span class="span-ev">parole chiave</span> per identificare l'azione da eseguire. Ecco un elenco:
             </p>
-            <br><br><br>
+            <br>
 
-            <h2 style="background-color: white; color: #E37;">JavaScript è Case Sensitive</h2>
+            <table class="tabellaoperatori">
+                <tr>
+                    <th>Parole chiave</th>
+                    <th>Descrizione</th>
+                </tr>
+                <tr>
+                    <td>var</td>
+                    <td>Dichiara una variabile</td>
+                </tr>
+                <tr>
+                    <td>let</td>
+                    <td>Dichiara una variabile di blocco</td>
+                </tr>
+                <tr>
+                    <td>const</td>
+                    <td>Dichiara una costante di blocco</td>
+                </tr>
+                <tr>
+                    <td>if</td>
+                    <td>Contrassegna un blocco di istruzioni da eseguire su una condizione</td>
+                </tr>
+                <tr>
+                    <td>switch</td>
+                    <td>Contrassegna un blocco di istruzioni da eseguire in casi diversi</td>
+                </tr>
+                <tr>
+                    <td>for</td>
+                    <td>Contrassegna un blocco di istruzioni da eseguire in un ciclo</td>
+                </tr>
+                <tr>
+                    <td>function</td>
+                    <td>Dichiara una funzione</td>
+                </tr>
+                <tr>
+                    <td>return</td>
+                    <td>Esce da una funzione</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>try</td>
+                    <td>Implementa la gestione degli errori in un blocco di istruzioni</td>
+                </tr>
+            </table>
 
             <p>
-                Tutti gli <span class="span-ev">identificatori</span> JavaScript fanno distinzione tra <span
-                    class="span-ev">maiuscole</span> e <span class="span-ev">minuscole</span>. Esempio:
+                Le <span class="span-ev">parole chiave</span> non possono essere utilizzare come <span class="span-ev">nomi</span> per le variabili.
             </p>
-
-            <div class="esempiojavascript" style="background-color: #24252A;">
-                <br>
-                <p style="width: 92%;">
-                    <span class="first-span-center">let</span>
-                    <span class="second-span-center">primonome</span> =
-                    <span class="second-span-center">"Giovanni"</span>;
-                    <br>
-                    <br>
-                    <span class="first-span-center">let</span>
-                    <span class="second-span-center">primoNome</span> =
-                    <span class="second-span-center">"Antonio"</span>;
-                </p>
-                <br>
-            </div>
-
-            <button><a href="https://codepen.io/antonioooooooo515/pen/BaYQyaL" target="_blank">Prova
-                    tu!</a></button><br><br><br>
-
-            <p>
-                Inoltre, JavaScript non interpreta <span class="span-ev">LET</span> o <span class="span-ev">Let</span>
-                come <span class="span-ev">let</span>.
-            </p>
-
-            <br><br><br>
-            
-            <div class="img-html-css">
-                <img src="../Immagini/JavaScript-Logo.png" width="500px">
-            </div>
         </article>
 
         <aside>

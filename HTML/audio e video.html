@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a> 
+    <a href="../index.html"><img class="logo" src="../Immagini/WDAS-LOGO.png" width="170px"></a>
       <div class="menu">
         <div class="menù-toggle">
           <div class="menù-toggle-content"></div>
@@ -95,11 +95,11 @@
           <h1 class="titolo">File audio e video</h1>
           <br>
 
-          <h2>
-            In una pagina HTML possono anche essere inseriti diversi elementi multimediali come filmati e suoni, oppure elementi particolari per i quali è necessario un plug-in. I file audio e video possono essere inclusi nella pagina tramite il tag &#60embed&#62. 
+          <p>
+            In una pagina HTML possono essere inseriti diversi elementi multimediali come filmati e suoni, oppure elementi particolari per i quali è necessario un plug-in. I file audio e video possono essere inclusi nella pagina tramite il tag <span class="span-ev">&#60embed&#62</span>. 
             <br>
             Sintassi:
-          </h2>
+          </p>
 
           <div class="esempiojavascript" style="background-color: #24252A;">
             <br>
@@ -111,20 +111,20 @@
           </div>
 
           <p>
-            I suoi principali attributi sono:
+            I suoi principali <span class="span-ev">attributi</span> sono:
           </p>
           
           <ul>
-            <li>"autostart", che consente di eseguire il file all'apertura della pagina;</li>
-            <li>"loop", che permette di decideree il numero di ripetizioni del file;</li>
-            <li>"volume", che consente di assegnare un volume;</li>
-            <li>"width", che indica la larghezza della finestra in cui verrà eseguito il file;</li>
-            <li>"height", che indica l'altezza della finestra in cui verrà eseguito il file;</li>
-            <li>"hidden", che permette di nascondere la finestra in cui verrà eseguito il file.</li>
+            <li>autostart, che consente di eseguire il file all'apertura della pagina;</li>
+            <li>loop, che permette di decideree il numero di ripetizioni del file;</li>
+            <li>volume, che consente di assegnare un volume;</li>
+            <li>width, che indica la larghezza della finestra in cui verrà eseguito il file;</li>
+            <li>height, che indica l'altezza della finestra in cui verrà eseguito il file;</li>
+            <li>hidden, che permette di nascondere la finestra in cui verrà eseguito il file.</li>
           </ul>
           
           <p>
-            Per inserire un filmato si può utilizzare il tag &#60embed&#62 incorporandolo all’interno del tag &#60object&#62, che è più recente e consente di selezionare il tipo di player da utilizzare tramite l’attributo "classid". La sintassi è la seguente:
+            Per inserire un <span class="span-ev">filmato</span> si può utilizzare il tag <span class="span-ev">&#60embed&#62</span> incorporandolo all’interno del tag <span class="span-ev">&#60object&#62</span>, che è più recente e consente di selezionare il tipo di player da utilizzare tramite l’attributo <span class="span-ev">classid</span>. La sintassi è la seguente:
           </p>
 
           <div class="esempiojavascript" style="background-color: #24252A;">
@@ -135,13 +135,13 @@
               <span class="first-span-center"> type</span> =
               <span class="second-span-center">"tipo"</span>
               <span class="first-span-center"> classid</span> =
-              <span class="second-span-center">"codebase"</span>
+              <span class="second-span-center">"codebase"</span>>
             </p>
             <p style="width: 90%;">
               &#60embed<span class="first-span-center"> src</span> =
               <span class="second-span-center">"url del file audio o video"</span>>
               <span class="first-span-center"> autostart</span> =
-              <span class="second-span-center">"true/false"</span>
+              <span class="second-span-center">"true/false"</span>>
             </p>
             <p style="width: 92%;">
               &#60/object>
@@ -154,18 +154,19 @@
           </p>
 
           <ul>
-            <li>"data", serve a specificare il percorso dell’oggetto da inserire nella pagina;</li>
-            <li>"classid", identifica il controllo ActiveX usato dal browser per leggere il filmato;</li>
-            <li>"codebase", indica dove scaricare il controllo qualora la versione presente sia inferiore a quella richiesta;</li>
-            <li>"type", è il tipo di oggetto da inserire (più esattamente è il MIME type dell’oggetto);</li>
-            <li>"archive", consente di indicare una lista di URL, separati da virgola, contenenti risorse relative all’oggetto inserito;</li>
-            <li>"width", "height", che indicano larghezza e altezza della finestra visualizzata.</li>
+            <li>data, serve a specificare il percorso dell’oggetto da inserire nella pagina;</li>
+            <li>classid, identifica il controllo ActiveX usato dal browser per leggere il filmato;</li>
+            <li>codebase, indica dove scaricare il controllo qualora la versione presente sia inferiore a quella richiesta;</li>
+            <li>type, è il tipo di oggetto da inserire (più esattamente è il MIME type dell’oggetto);</li>
+            <li>archive, consente di indicare una lista di URL, separati da virgola, contenenti risorse relative all’oggetto inserito;</li>
+            <li>width, height, che indicano larghezza e altezza della finestra visualizzata.</li>
           </ul>
           </p>
+          <br>
 
-          <h2>
-            Altri tag utilizzati per inserire file audio e video: tag &#60video&#62 e tag &#60audio&#62. Sintassi:
-          </h2>
+          <p>
+            Altri tag utilizzati per inserire file audio e video: tag <span class="span-ev">&#60video&#62</span> e tag <span class="span-ev">&#60audio&#62</span>. Sintassi:
+          </p>
 
           <div class="esempiojavascript" style="background-color: #24252A;">
             <br>
@@ -192,12 +193,12 @@
           </p>
 
           <ul>
-            <li>"autoplay", specifica che la riproduzione del video inizierà non appena sarà pronta;</li>
-            <li>"controls", specifica che devono essere visualizzati i controlli video (come un pulsante di riproduzione/pausa, ecc);</li>
-            <li>"loop", specifica che il video ricomincerà da capo ogni volta che è terminato;</li>
-            <li>"muted", specifica che l'uscita audio del video deve essere silenziata;</li>
-            <li>"poster", specifica un'immagine da mostrare durante il download del video o finché l'utente non preme il pulsante di riproduzione;</li>
-            <li>"preload", specifica se e come l'autore ritiene che il video debba essere visualizzato al caricamento della pagina.</li>
+            <li>autoplay, specifica che la riproduzione del video inizierà non appena sarà pronta;</li>
+            <li>controls, specifica che devono essere visualizzati i controlli video (come un pulsante di riproduzione/pausa, ecc);</li>
+            <li>loop, specifica che il video ricomincerà da capo ogni volta che è terminato;</li>
+            <li>muted, specifica che l'uscita audio del video deve essere silenziata;</li>
+            <li>poster, specifica un'immagine da mostrare durante il download del video o finché l'utente non preme il pulsante di riproduzione;</li>
+            <li>preload, specifica se e come l'autore ritiene che il video debba essere visualizzato al caricamento della pagina.</li>
           </ul>
           <br>
           <p>

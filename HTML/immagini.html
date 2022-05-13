@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a>
+    <a href="../index.html"><img class="logo" src="../Immagini/WDAS-LOGO.png" width="170px"></a>
     <div class="menu">
       <div class="menù-toggle">
         <div class="menù-toggle-content"></div>
@@ -98,9 +98,9 @@
       <h1 class="titolo">Inserimento di immagini</h1>
       <br>
 
-      <h2>
-        Nelle pagine Web, possono essere inserite delle immagini nei seguenti formati grafici:
-      </h2>
+      <p>
+        I principali browser web permettono di inserire, nelle pagine web, immagini nei seguenti formati grafici:
+      </p>
 
       <ul>
         <li>GIF (Graphics Interchange Format);</li>
@@ -109,14 +109,19 @@
       </ul>
 
       <p>
-        Il tag &#60img&#62 permette di collocare un’immagine all’interno della pagina secondo la seguente sintassi:
+        Il formato <span class="span-ev">GIF</span> supporta le animazioni e la trasparenza ma non supporta più di 256 colori. Il formato <span class="span-ev">JPG</span> supporta fino a 16 milioni di colori ma non supporta nè le animazioni nè la trasparenza. Il formato <span class="span-ev">PNG</span> incorpora le caratteristiche dei precedenti, in quanto possiede un'alta qualità e consente di avere uno sfondo trasparente.
+      </p>
+      <br>
+
+      <p>
+        Il tag <span class="span-ev">&#60img&#62</span> permette di collocare un’immagine all’interno della pagina secondo la seguente sintassi:
       </p>
 
       <div class="esempiojavascript" style="background-color: #24252A;">
         <br>
         <p style="width: 92%;">
           &#60img <span class="first-span-center">src</span> =
-          <span class="second-span-center">"immaginedainserire.png"</span>>
+          <span class="second-span-center">"percorso/immagineDaInserire.png"</span>>
         </p>
         <br>
       </div>
@@ -128,22 +133,42 @@
         <br>
         <br>
 
+        Quindi:
+
+        <div class="esempiojavascript" style="background-color: #24252A; margin-bottom: 5px;">
+          <br>
+          <p style="width: 92%;">
+            &#60img <span class="first-span-center">src</span> =
+            <span class="second-span-center">"Immagine1.png"</span>>
+          </p>
+          <br>
+        </div>
+      </p>
+
+      <button class="provatu"><a href="https://codepen.io/antonioooooooo515/pen/bGLpyKN" target="_blank">Prova
+        tu!</a></button><br><br><br>
+
+      <p>
         Inoltre, il tag &#60img&#62 possiede una serie di attributi che consentono di variare alcune caratteristiche
         dell’immagine. Questi sono:
       </p>
 
       <ul>
-        <li>"src", che indica il percorso del file dell’immagine;</li>
-        <li>"border", che indica lo spessore ai lati della figura stessa;</li>
-        <li>"width" e "height", che indicano rispettivamente la larghezza e l’altezza dell’immagine e possono essere
+        <li>src, che indica il percorso del file dell’immagine;</li>
+        <li>border, che indica lo spessore ai lati della figura stessa;</li>
+        <li>width e height, che indicano rispettivamente la larghezza e l’altezza dell’immagine e possono essere
           espresse sia come numero (pixel) che come percentuale rispetto alla larghezza o altezza complessive della
           pagina;</li>
-        <li>"align", che permette di allineare l’immagine al testo o a un’altra immagine. L’allineamento può essere
-          centrato (middle), a destra (right), a sinistra (left) in basso (bottom) oppure in alto (top).</li>
+        <li>align, che permette di allineare l’immagine al testo o a un’altra immagine. L’allineamento può essere
+          centrato (middle), a destra (right), a sinistra (left) in basso (bottom) oppure in alto (top);</li>
+          <li>alt, che permette di far apparire un commento quando il mouse passa sopra l'immagine stessa.</li>
       </ul>
 
-      <button class="provatu"><a href="https://codepen.io/antonioooooooo515/pen/bGLpyKN" target="_blank">Prova
-        tu!</a></button>
+      <p>
+        Inoltre, quando il browser non riesce a visualizzare correttamente l'immagine, apparirà la stringa inserita nell'attributo <span class="span-ev">alt</span>.
+      </p>
+
+      
     </article>
 
     <aside>

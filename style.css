@@ -165,8 +165,8 @@ body
 .logo
 {
     position: absolute;
-    left: 5px;
-    top: 8px;
+    left: 3px;
+    top: 0px;
 }
 
 .insta
@@ -1477,14 +1477,12 @@ nav li a:hover
 .contact-information .information h1
 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
 .contact-information .information span
 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
 
@@ -1664,7 +1662,7 @@ p.paragrafo2
 
 .esempioactive:active
 {
-    background-color: #24252A;
+    background-color: #E34672;
     padding: 20px 25px;
     font-size: 28px;
     color: white;
@@ -1674,7 +1672,7 @@ p.paragrafo2
 {
     background-color: white;
     text-decoration: none;
-    padding: 0;
+    padding: 5px;
     font-size: 25px;
     color: #E34672;
     border-radius: 8px;
@@ -1730,7 +1728,7 @@ article fieldset
     align-items: center;
     font-size: 20px;
     border-radius: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     position: relative;
     background: white;
 }
@@ -1764,11 +1762,9 @@ article fieldset
     padding: 3px;
 }
 
-
-
 .normal-input-img
 {
-    width: 40%;
+    width: 30%;
     font-size: 20px;
     border-radius: 5px;
     margin: 10px;
@@ -1971,6 +1967,11 @@ article h3
     padding: 0 1%;
 }
 
+.input-elements p
+{
+    width: 100%;
+}
+
 @media (max-width: 1080px)
 {
     .esempio-form-content
@@ -1987,25 +1988,20 @@ article h3
         width: 80%;
     }
 
-    .input-elements
-    {
-        text-align: center;
-    }
-
     .input-elements p
     {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .input-elements fieldset
     {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 20px;
 
     }
 
@@ -2030,7 +2026,8 @@ article h3
 
     .normal-input-img
     {
-        width: 60%;
+        width: 30%;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
 
@@ -2041,6 +2038,12 @@ article h3
         width: 50%;
         margin-bottom: 10px;
     }
+}
+
+.span-ev
+{
+    background-color: white;
+    color: #E37;
 }
 
 /*==================Altro==================*/

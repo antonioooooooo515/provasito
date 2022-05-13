@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a>
+        <a href="../index.html"><img class="logo" src="../Immagini/WDAS-LOGO.png" width="170px"></a>
         <div class="menu">
             <div class="menù-toggle">
                 <div class="menù-toggle-content"></div>
@@ -36,6 +36,7 @@
                 <ul>
                     <li><a href="javascriptgenerale.html">Generale</a></li>
                     <li><a href="introduzione.html">Introduzione</a></li>
+                    <li><a href="dichiarazioni.html">Dichiarazioni</a></li>
                     <li><a href="variabili.html">Variabili</a></li>
                     <li><a href="operatori.html">Operatori</a></li>
                     <li><a href="funzioni.html">Funzioni</a></li>
@@ -52,6 +53,7 @@
         <ul>
             <li><a href="javascriptgenerale.html">Generale</a></li>
             <li><a href="introduzione.html">Introduzione</a></li>
+            <li><a href="dichiarazioni.html">Dichiarazioni</a></li>
             <li><a href="variabili.html">Variabili</a></li>
             <li><a href="operatori.html">Operatori</a></li>
             <li><a href="funzioni.html">Funzioni</a></li>
@@ -65,6 +67,7 @@
             <ul>
                 <li><a class="first-lateralbar" href="javascriptgenerale.html">Generale</a></li>
                 <li><a href="introduzione.html">Introduzione</a></li>
+                <li><a href="dichiarazioni.html">Dichiarazioni</a></li>
                 <li><a href="variabili.html">Variabili</a></li>
                 <li><a href="operatori.html">Operatori</a></li>
                 <li><a href="funzioni.html">Funzioni</a></li>
@@ -166,7 +169,78 @@
             </div>
 
             <button><a href="https://codepen.io/antonioooooooo515/pen/MWQegVb" target="_blank">Prova
-                tu!</a></button>
+                tu!</a></button><br><br><br>
+
+
+            <h2 style="background-color: white; color: #E37;">Accesso agli elementi di un array</h2>
+
+            <p>
+                Si può accedere a un elemento dell'array facendo riferimento al <span class="span-ev">numero di indice</span>. Esempio:
+            </p>
+            <br>
+
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                <p style="width: 92%;">
+                    <span class="first-span-center">const</span> computers = 
+                    [<span class="second-span-center">"MSI", "HP", "Samsung"</span>];
+                    <br>
+
+                    <span class="first-span-center">let</span> first = 
+                    <span class="second-span-center">computers[0]</span>;
+                </p>
+                <br>
+            </div>
+
+            <button><a href="https://codepen.io/antonioooooooo515/pen/RwQoNPN" target="_blank">Prova
+                tu!</a></button><br><br><br>
+
+                <h2 style="background-color: white; color: #E37;">Modifica di un elemento di un array</h2>
+
+            <p>
+                Questa istruzione cambia il valore del primo elemento di un array. Esempio:
+            </p>
+            <br>
+
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                <p style="width: 92%;">
+                    <span class="first-span-center">const</span> computers = 
+                    [<span class="second-span-center">"MSI", "HP", "Samsung"</span>];
+                    <br>
+
+                    <span class="first-span-center">computers[0]</span> =
+                    <span class="second-span-center">"Huawei"</span>;
+                </p>
+                <br>
+            </div>
+
+            <button><a href="https://codepen.io/antonioooooooo515/pen/WNMobQO" target="_blank">Prova
+                tu!</a></button><br><br><br>
+
+                <h2 style="background-color: white; color: #E37;">Accesso all'array completo</h2>
+
+            <p>
+                Con JavaScript, è possibile accedere all'intero array facendo riferimento al nome dell'array. Esempio:
+            </p>
+            <br>
+
+            <div class="esempiojavascript" style="background-color: #24252A;">
+                <br>
+                <p style="width: 92%;">
+                    <span class="first-span-center">const</span> computers = 
+                    [<span class="second-span-center">"MSI", "HP", "Samsung"</span>];
+                    <br>
+
+                    <span class="first-span-center">document.getElementById</span>
+                    (<span class="second-span-center">"arraycomputer"</span>)
+                    <span class="first-span-center">.innerHTML</span> = computers;
+                </p>
+                <br>
+            </div>
+
+            <button><a href="https://codepen.io/antonioooooooo515/pen/wvyoBMg" target="_blank">Prova
+                tu!</a></button><br>
         </article>
 
         <aside>

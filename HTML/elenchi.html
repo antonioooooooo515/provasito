@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a>
+    <a href="../index.html"><img class="logo" src="../Immagini/WDAS-LOGO.png" width="170px"></a>
     <div class="menu">
       <div class="menù-toggle">
         <div class="menù-toggle-content"></div>
@@ -98,42 +98,163 @@
       <h1 class="titolo">Liste numerate e puntate</h1>
       <br>
 
-      <h2>
+      <p>
         Le liste o elenchi si possono dividere in tre categorie:
-      </h2>
+      </p>
 
       <ul>
-        <li>elenchi numerati o ordinati in modo progressivo;</li>
-        <li>elenchi puntati o non ordinati;</li>
-        <li>elenchi di definizione.</li>
+        <li>elenchi <span class="span-ev">numerati</span> o ordinati in modo progressivo;</li>
+        <li>elenchi <span class="span-ev">puntati</span> o non ordinati;</li>
+        <li>elenchi di <span class="span-ev">definizione</span>.</li>
       </ul>
 
       <p>
-        Per gli elenchi numerati si utilizza il tag &#60ol&#62 (Ordered List).
+        Per gli elenchi numerati si utilizza il tag <span class="span-ev">&#60ol&#62</span> (Ordered List, Lista Ordinata).
+        Per quelli puntati si utilizza il tag <span class="span-ev">&#60ul&#62</span> (Unordered List, Lista non Ordinata).
+        Ogni elemento della lista deve inoltre essere preceduto dal tag <span class="span-ev">&#60li&#62</span> (List Item).
         <br>
-        Per quelli puntati si utilizza il tag &#60ul&#62 (Unordered List).
-        <br>
-        Ogni elemento della lista deve inoltre essere preceduto dal tag &#60li&#62 (List Item).
-        <br>
-        <br>
+        Esempio:
+      </p>
 
+      <div class="esempiojavascript" style="background-color: #24252A; margin-bottom: 5px;">
+        <br>
+        <p style="width: 92%;">
+          &#60<span class="first-span-center">ul</span>>
+        </p>
+
+        <p style="width: 90%;">
+          &#60<span class="first-span-center">li</span>> Primo elemento
+          &#60<span class="first-span-center">/li</span>>
+          <br>
+          &#60<span class="first-span-center">li</span>> Secondo elemento
+          &#60<span class="first-span-center">/li</span>>
+          <br>
+          &#60<span class="first-span-center">li</span>> Terzo elemento
+          &#60<span class="first-span-center">/li</span>>
+          <br>
+          &#60<span class="first-span-center">li</span>> Quarto elemento
+          &#60<span class="first-span-center">/li</span>>
+        </p>
+
+        <p style="width: 92%;">
+          &#60<span class="first-span-center">/ul</span>>
+        </p>
+        <br>
+      </div>
+
+      <button class="provatu"><a href="https://codepen.io/antonioooooooo515/pen/JjpXqOp" target="_blank">Prova
+        tu!</a></button><br><br><br><br>
+
+      <p>
+        Attraverso l'attributo <span class="span-ev">type</span> possono essere modificati gli stili dell'elenco:
+      </p>
+
+      <table class="tabellaoperatori" style="margin-bottom: 10px;">
+        <tr>
+          <th>Type</th>
+          <th>Simbolo</th>
+        </tr>
+        <tr>
+          <td>&#60ol type = "A"></td>
+          <td style="text-align: right;">
+            A.
+            <br>
+            B.
+            <br>
+            C.
+          </td>
+        </tr>
+        <tr>
+          <td>&#60ol type = "a"></td>
+          <td style="text-align: right;">
+            a.
+            <br>
+            b.
+            <br>
+            c.
+          </td>
+        </tr>
+        <tr>
+          <td>&#60ol type = "I"></td>
+          <td style="text-align: right;">
+            I.
+            <br>
+            II.
+            <br>
+            III.
+          </td>
+        </tr>
+        <tr>
+          <td>&#60ol type = "i"></td>
+          <td style="text-align: right;">
+            i.
+            <br>
+            ii.
+            <br>
+            iii.
+          </td>
+        </tr>
+        <tr>
+          <td>&#60ol type = "1"></td>
+          <td style="text-align: right;">
+            1.
+            <br>
+            2.
+            <br>
+            3.
+          </td>
+        </tr>
+        <tr>
+          <td>&#60ul type = "disc"></td>
+          <td style="text-align: right;">
+            •
+            <br>
+            •
+            <br>
+            •
+          </td>
+        </tr>
+        <tr>
+          <td>&#60ul type = "circle"></td>
+          <td style="text-align: right;">
+            ○
+            <br>
+            ○
+            <br>
+            ○
+          </td>
+        </tr>
+        <tr style="border-bottom: 2px solid black;">
+          <td>&#60ul type = "square"></td>
+          <td style="text-align: right;">
+            ■
+            <br>
+            ■
+            <br>
+            ■
+          </td>
+        </tr>
+      </table>
+
+      <button class="provatu"><a href="https://codepen.io/antonioooooooo515/pen/NWyrzJq" target="_blank">Prova
+        tu!</a></button><br><br><br><br>
+
+      <p>
         Gli elenchi di definizione, invece, sono costituiti da coppie di elementi composte da un termine:
       </p>
+      
       <ul>
-        <li>inizio lista ("dl"), Definition List;</li>
-        <li>fine lista ("dt"), Definition Term;</li>
-        <li>definizione ("dd"), Definition Defined.</li>
+        <li>inizio lista (&#60dl&#62), Definition List;</li>
+        <li>fine lista (&#60dt&#62), Definition Term;</li>
+        <li>definizione (&#60dd&#62), Definition Defined.</li>
       </ul>
 
-      <p>
+      <!-- <p>
         Inoltre:
       </p>
 
       <img src="../Immagini/Elenchi.JPG" style="width: 100%; max-width: 700px;">
-      <br>
-
-      <button class="provatu"><a href="https://codepen.io/antonioooooooo515/pen/JjpXqOp" target="_blank">Prova
-          tu!</a></button>
+      <br> -->
     </article>
 
     <aside>

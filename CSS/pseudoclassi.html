@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <a href="../index.html"><img class="logo" src="../Immagini/Logo.png" width="125px"></a>
+    <a href="../index.html"><img class="logo" src="../Immagini/WDAS-LOGO.png" width="170px"></a>
     <div class="menu">
       <div class="menù-toggle">
         <div class="menù-toggle-content"></div>
@@ -104,19 +104,19 @@
       <h1 class="titolo">Pseudoclassi</h1>
       <br>
 
-      <h2>
-        Mediante le <span style="background-color: white; color: darkmagenta;">pseudoclassi</span> possiamo modificare
+      <p>
+        Mediante le <span class="span-ev">pseudoclassi</span> possiamo modificare
         lo stile di un elemento HTML, come per esempio quando selezioniamo una casella di testo, oppure quando il mouse
-        passa sopra a un collegamento ipertestuale. Per dichiarare una pseudoclasse utilizziamo la sintassi seguente:
-      </h2>
+        passa sopra a un collegamento ipertestuale. Per dichiarare una <span class="span-ev">pseudoclasse</span> utilizziamo la seguente sintassi:
+      </p>
       <br>
 
       <div class="box-esempi">
         <br>
         <p style="width: 95%;">
           <span class="first-span-center">selettore</span>:
-          <span class="second-span-center">selettore</span>{
-          <span class="second-span-center">dichiarazioni</span>;}
+          <span class="second-span-center">pseudoclasse</span> {
+          <span class="second-span-center">dichiarazioni</span>; }
         </p>
         <br>
       </div>
@@ -124,26 +124,25 @@
       <h1 class="titolo">Pseudoclassi dinamiche</h1>
       <br>
 
-      <h2>
-        Le <span style="background-color: white; color: darkmagenta;">pseudoclassi dinamiche </span>consentono di
+      <p>
+        Le <span class="span-ev">pseudoclassi dinamiche </span>consentono di
         modificare le impostazioni che contraddistinguono lo stato di un marcatore, spesso in seguito all’azione di un
         utente.
-      </h2>
-      <br>
-      <br>
-
-      <h1 class="sottotitolo"><i class='bx bxs-bookmark-alt segnalibro'></i> :hover</h1>
-      <br>
-
-      <p>
-        Si applica al passaggio del mouse sopra a un collegamento ipertestuale. La sua applicazione più comune è quella
-        che consente la modifica dell’aspetto di link e pulsanti al passaggio del mouse. Facciamo un esempio con questo
-        link. Prova a far passare il mouse sopra il link qui sotto:
       </p>
       <br>
       <br>
 
-      <a class="esempiohover">Hover</a>
+      <h2 style="background-color: white; color: #E37;"><i class='bx bxs-bookmark-alt segnalibro'></i> :hover</h2>
+      <br>
+
+      <p>
+        Si applica al passaggio del mouse sopra un qualsiasi elemento HTML. La sua applicazione più comune è quella
+        che consente la modifica dell’aspetto di link e pulsanti al passaggio del mouse. Facciamo un esempio. Prova a far passare il mouse sopra il link qui sotto:
+      </p>
+      <br>
+      <br>
+
+      <a class="esempiohover">Hover me!</a>
       <br>
       <br>
       <br>
@@ -153,11 +152,12 @@
 
       <div class="box-esempi">
         <br>
-        &emsp;<span class="first-span-center">.esempio:hover</span>
-        <br>
-        &emsp;{
-        <br>
-        <p style="width: 92%;">
+        <p style="width: 94%;">
+          <span class="first-span-center">.esempio:hover</span>
+          <br>
+          {
+        </p>
+        <p style="width: 88%;">
           <span class="first-span-center">background-color</span>:
           <span class="second-span-center">#E34672</span>;
           <br>
@@ -170,8 +170,9 @@
           <span class="first-span-center">color</span>:
           <span class="second-span-center">white</span>;
         </p>
-        &emsp;}
-        <br>
+        <p style="width: 94%;">
+          }
+        </p>
         <br>
       </div>
 
@@ -184,14 +185,14 @@
       <br>
 
       <p>
-        Serve per modificare la formattazione del link quando e mentre esso viene attivato dall’utente. L’elemento è in
-        stato active durante la pressione del pulsante del mouse su di esso, per tutto il tempo che intercorre tra il
-        clic e il rilascio del pulsante. Clicca qui sotto:
+        Serve per modificare un elemento HTML quando e mentre esso viene attivato dall’utente. L’elemento è in
+        stato <span class="span-ev">active</span> durante la pressione del pulsante del mouse su di esso, per tutto il tempo che intercorre tra il
+        clic e il rilascio del pulsante. Facciamo un esempio. Clicca il link qui sotto:
       </p>
       <br>
       <br>
 
-      <a class="esempioactive">Active</a>
+      <a class="esempioactive">Click me!</a>
       <br>
       <br>
       <br>
@@ -201,11 +202,12 @@
 
       <div class="box-esempi">
         <br>
-        &emsp;<span class="first-span-center">.esempio:active</span>
-        <br>
-        &emsp;{
-        <br>
-        <p style="width: 92%;">
+        <p style="width: 94%;">
+          <span class="first-span-center">.esempio:active</span>
+          <br>
+          {
+        </p>
+        <p style="width: 88%;">
           <span class="first-span-center">background-color</span>:
           <span class="second-span-center">#24252A</span>;
           <br>
@@ -218,8 +220,9 @@
           <span class="first-span-center">color</span>:
           <span class="second-span-center">white</span>;
         </p>
-        &emsp;}
-        <br>
+        <p style="width: 94%;">
+          }
+        </p>
         <br>
       </div>
 
@@ -231,10 +234,9 @@
       <br>
 
       <p>
-        Questa pseudoclasse viene attivata quando un elemento riceve il focus, quando cioè può accettare eventi
-        attraverso la tastiera, per esempio l’inserimento di testo in un modulo.
+        Questa pseudoclasse viene attivata quando un elemento riceve il <span class="span-ev">focus</span>, quando cioè può accettare eventi
+        attraverso la tastiera, per esempio l’inserimento di testo in un modulo. Facciamo un esempio con il campo di testo qui sotto.
       </p>
-      <br>
       <br>
 
       <p>Prova a digitare:</p>
@@ -248,19 +250,21 @@
 
       <div class="box-esempi">
         <br>
-        &emsp;<span class="first-span-center">.esempio:focus</span>
-        <br>
-        &emsp;{
-        <br>
         <p style="width: 92%;">
+          <span class="first-span-center">.esempio:focus</span>:
+          <br>
+          {
+        </p>
+        <p style="width: 88%;">
           <span class="first-span-center">background-color</span>:
           <span class="second-span-center">#24252A</span>;
           <br>
           <span class="first-span-center">color</span>:
           <span class="second-span-center">white</span>;
         </p>
-        &emsp;}
-        <br>
+        <p style="width: 92%;">
+          }
+        </p>
         <br>
       </div>
 
