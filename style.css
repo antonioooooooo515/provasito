@@ -3,7 +3,6 @@
 
 *
 {
-    background-color: #24252A;
     margin: 0%;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
@@ -159,6 +158,12 @@
 body
 {
     overflow-X: hidden;
+    background-color: #24252A;
+}
+
+header
+{
+    background-color: #24252A;
 }
 
 /*Menù*/
@@ -2250,6 +2255,50 @@ article h3
 }
 
 /*==================Responsive==================*/
+
+.body-div-center button, .body-div-center button a
+{
+    background-color: #353535;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.body-div-center button a
+{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.body-div-center button::before
+{
+    background-color: #E34672;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.body-div-center button:hover::before
+{
+    width: 100%;
+}
+
+/*==================Responsive==================*/
 @media (max-width: 1080px)
 {
     .home-argoments
@@ -2976,7 +3025,6 @@ article h3
         padding: 19px 22px;
     }
 
-
     .first-divcenter-content1
     {
         margin-top: 50px;
@@ -2987,4 +3035,53 @@ article h3
     {
         font-size: 65px;
     }    
+}
+
+@media (max-width: 1300px) and (min-width: 1081px)
+{
+    .first-divcenter
+    {
+        height: auto;
+        margin-top: 170px;
+        margin-bottom: 270px;
+        text-align: center;
+    }
+
+    .first-divcenter-content1
+    {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .center-first, .center-second, .center-third, .center-fourth, .center-fifht, .center-sixth
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .freccia
+    {
+        margin-top: 20px;
+    }
+
+    .first-divcenter-content2
+    {
+        font-size: 50px;
+    }
+
+    .first-metod, .second-metod, .third-metod, .fourth-metod, .fifth-metod, .sixth-metod
+    {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 250px;
+    }
+
+    .left-first
+    {
+        text-align: center;
+    }
 }
